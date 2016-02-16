@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
     {% include header.html %}
+    <div class="mdl-layout__content">
+        <a name="top"></a>
+      {{ content }}
+      {% include footer.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
     </div>
-
-    {% include footer.html %}
-
-  </body>
+  </div>
+  <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+</body>
 
 </html>

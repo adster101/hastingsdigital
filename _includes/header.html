@@ -1,32 +1,21 @@
 <!-- Always shows a header, even in smaller screens. -->
-  <header class="round-table-header mdl-layout__header mdl-layout__header--waterfall">
+<!-- Always shows a header, even in smaller screens. -->
+<a href="#top"></a>
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="round-table-title mdl-layout-title">
-        {{ site.title }}
-      </span>
+      <span class="mdl-layout-title">{{ site.title }}</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
-      <div class="round-table-navigation-container">
-        <nav class="round-table-navigation mdl-navigation">
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Who We are</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">What we do</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">News</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
-        </nav>
-      </div>
-      <span class="round-table-mobile-title mdl-layout-title">
-        <img class="round-table-logo-image" src="css/images/round-table-small-logo.png" />
-      </span>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        {% include nav.html %}
+      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">{{ site.title }}</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Who We are</a>
-      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">What we do</a>
-      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">News</a>
-      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+      {% include nav.html %}
     </nav>
   </div>
