@@ -1,8 +1,10 @@
 ---
 layout: page
-title: HBMF - Proposal
+title: "HBMF - Proposal"
 permalink: /hbmf/
+published: true
 ---
+
 
 Introduction
 ------------
@@ -61,48 +63,67 @@ There are also other advantages. For example:
 - Integrated PayPal option
 - No need for HTTPS certificates
 
-The possible disadvantage of this option is that there is commission on any sales made via Shopify, although I assume that will be true of most payment gateways.
+The possible disadvantage of this option is that there is commission on any sales made via Shopify, although I assume that will be true of most payment gateways (e.g. PayPal)
 
-#### HBMF Website
+#### General content
 
-The other aspect is, of course, the main public facing website.
+As well as the ticketing element there is of course the general site content. 
 
-It's likely that the amount of work involved in retaining the existing WordPress site (i.e.upgrading, optimising, building out a new template and navigation scheme) outweighs that involved by simply  migrating the content onto a new simpler platform (e.g. Joomla!).
+A spider of the site picks up less than 20 unqiue URLs:
 
-Therefore, I recommend migrating the site. Care would be taken in order to perform the migration in accordance with Google best practices to ensure a seamless migration.
+- http://hbmf.co.uk
+- http://hbmf.co.uk/box-office/
+- http://hbmf.co.uk/information/
+- http://hbmf.co.uk/about/
+- http://hbmf.co.uk/beers/
+- http://hbmf.co.uk/sponsors/
+- http://hbmf.co.uk/the-music/
+- http://hbmf.co.uk/box-office
+- http://hbmf.co.uk/product/hbmf-tickets/
+- http://hbmf.co.uk/the-music
+- http://hbmf.co.uk/the-venue/
+- http://hbmf.co.uk/gallery/
+- http://hbmf.co.uk/where-the-money-goes/
+- http://hbmf.co.uk/contact/
+- http://hbmf.co.uk/product/battle-of-hastings-proms-2015-tickets/
+
+Given that there are relatively few URLs and that there is a reasonable amount of work involved in retaining the existing WordPress site (i.e. updating WP, updating WP plugins, optimising, building out a new template and navigation scheme) I reccommend migrating the site to a fresh Joomla! install. 
+
+Performing a simple migration would be quicker and simpler and would allow a clean slate on which to build the new site. 
+
 
 ##### Navigation and layout
 
-I suggest implementing a navigation scheme along similar line to other festival sites. For example
+I suggest implementing a navigation scheme inline with other festival websites. For example
 
 - http://www.leefest.org/home/
 - http://endoftheroadfestival.com/
 
-So I would propose a top-level navigation as follows:
+The content on these sites is more organised with a self-contained 'information' section. This is clear signpost not only for people already attending the festival but also useful for people considering purchasing tickets. 
+
+I would propose a revised navigation as follows:
 
 - Home
 - Lineup
 - Beer
 - Info
+	- History/About
+  	- Round table/Organisers
+ 	- Where the money goes
+	- The Venue
+	- Location and map
+	- Site info
+	- Sponsors	
 - Tickets
 - News
+- Contact
+- Gallery
 
 The key calls to action (e.g. buy tickets) will be highlighted in an accent colour to draw the attention of the user.
 
-The 'info' section would contain links through to more details pages about the roots of the festival, the organisers, location and travel details etc. For example:
-
-- Info
-  - History
-  - Round table / organisers
-    - Links to round table website
-  - Location and map
-  - Site info
-  - Sponsors
-  - etc
+The 'info' section would contain links through to more details pages about the roots of the festival, the organisers, location and travel details etc.
 
 Having this clear navigation would allow a focus on imagery and testimonials as well as social media.
-
-Once the navigation is agreed I will provide static wireframes of suggested layouts.
 
 ##### Design
 
