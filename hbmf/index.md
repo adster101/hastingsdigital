@@ -32,13 +32,13 @@ Broadly there are two main elements to the site.
 
 As mentioned I'm proposing a third party service to handle the ticket sales for HBMF.
 
-The service I've been looking at is called Shopify (https://shopify.co.uk).
+The service I've been looking at is called [Shopify](https://shopify.co.uk).
 
 Essentially Shopify is a service which allows you to create product items which you can offer for sale via an existing website. The easiest way to achieve this using the service is via a widget which once embedded on a page instantly adds full shopping cart functionality.
 
 I've mocked up a simple page with a shopify button to demonstrate how this looks.
 
-http://hastings.digital/hbmf/buy
+[http://hastings.digital/hbmf/buy](http://hastings.digital/hbmf/buy)
 
 This is just a mock up but I could see this working in a very similar fashion on the HBMF wesbsite.
 
@@ -46,11 +46,11 @@ When the 'add to cart' button is clicked the product is added to a cart where th
 
 All of the key aspects of the cart and checkout process are customisable.
 
-By using this third party service for the ticket sales the scope of the work becomes much smaller. In effect we're then looking at a reasonably straightforward migration/re-design. This is useful for two reasons.
+By using this third party service for the ticket sales the scope of the work becomes much smaller. In effect we're then looking at a straightforward migration/re-design. 
 
-Firstly, by keeping the scope of the work to a minimum the work can be completed for a much smaller up front cost.
+This is useful as by keeping the scope of the work to a minimum the work can be completed for a much smaller up front cost.
 
-Secondly, a smaller amount of work means it should achievable in a shorter space of time. Given the reasonably tight deadline for this project - I'm assuming that the site needs to be up and selling ticket by early April - this can only be a good thing.
+Also, a smaller amount of work means it should achievable in a shorter space of time. Given the reasonably tight deadline for this project - I'm assuming that the site needs to be up and selling ticket by early April - this should be a good thing.
 
 There are also other advantages. For example:
 
@@ -69,7 +69,7 @@ The possible disadvantage of this option is that there is commission on any sale
 
 As well as the ticketing element there is of course the general site content. 
 
-A spider of the site picks up less than 20 unqiue URLs:
+A spider of the site picks up only 15 unqiue URLs:
 
 - http://hbmf.co.uk
 - http://hbmf.co.uk/box-office/
@@ -105,7 +105,7 @@ I would propose a revised navigation as follows:
 
 - Home
 - Lineup
-- Beer
+- Beers
 - Info
 	- History/About
   	- Round table/Organisers
@@ -127,7 +127,6 @@ Having this clear navigation would allow a focus on imagery and testimonials as 
 
 ##### Design
 
-Once the wireframe layouts have been agreed I would work closely with the Round table to deliver a clean, modern site.
+Once the navigation scheme has been finalised I will create a series of static wireframes outlining the layout of each page. 
 
-This would involve an element of graphic design prior to any coding.
-I would seek to work with a local creative / graphic designer to provide a re-freshed and re-invigorated look and feel for the HBMF website.
+Once the wireframe layouts have been agreed I  would seek to work with a local creative / graphic designer with a view to providing a look and feel in keeping with the brand colours as defined in the current logo. 
