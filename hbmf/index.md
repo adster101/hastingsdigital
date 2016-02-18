@@ -6,6 +6,7 @@ published: true
 ---
 
 
+
 Introduction
 ------------
 
@@ -107,13 +108,13 @@ I would propose a revised navigation as follows:
 - Lineup
 - Beers
 - Info
-	- History/About
-  	- Round table/Organisers
- 	- Where the money goes
-	- The Venue
-	- Location and map
-	- Site info
-	- Sponsors	
+  - History/About
+  - Round table/Organisers
+  - Where the money goes
+  - The Venue
+  - Location and map
+  - Site info
+  - Sponsors	
 - Tickets
 - News
 - Contact
@@ -129,4 +130,4 @@ Having this clear navigation would allow a focus on imagery and testimonials as 
 
 Once the navigation scheme has been finalised I will create a series of static wireframes outlining the layout of each page. 
 
-Once the wireframe layouts have been agreed I  would seek to work with a local creative / graphic designer with a view to providing a look and feel in keeping with the brand colours as defined in the current logo. 
+Once the wireframe layouts have been agreed I  would seek to work with a local creative / graphic designer with a view to providing a look and feel in keeping with the brand colours as defined in the current logo.
