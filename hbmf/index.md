@@ -7,6 +7,7 @@ published: true
 
 
 
+
 Introduction
 ------------
 
@@ -15,8 +16,6 @@ The following proposal is for the migration and management of the Hastings Beer 
 The proposal is to move the ticket sales to a third party service, implement a new mobile optimised website along with a new design and improved content layout.
 
 ### Website
-
-In the absence of a detailed requirements document for the website I'm making a few assumptions about what is required and how that can best be achieved.  
 
 It's apparent that the current website falls short in a number of areas.
 
@@ -49,11 +48,9 @@ All of the key aspects of the cart and checkout process are customisable.
 
 By using this third party service for the ticket sales the scope of the work becomes much smaller. In effect we're then looking at a straightforward migration/re-design. 
 
-This is useful as by keeping the scope of the work to a minimum the work can be completed for a much smaller up front cost.
+This is useful as by keeping the scope of the work to a minimum it can be completed more quickly with less cost.
 
-Also, a smaller amount of work means it should achievable in a shorter space of time. Given the reasonably tight deadline for this project - I'm assuming that the site needs to be up and selling ticket by early April - this should be a good thing.
-
-There are also other advantages. For example:
+There are also other advantages of using Shopify. For example:
 
 - Possible to sell tickets via a Facebook 'app'
 - Embed a 'buy tickets now' button into an email and broadcast to a mailing list
@@ -92,15 +89,14 @@ Given that there are relatively few URLs and that there is a reasonable amount o
 
 Performing a simple migration would be quicker and simpler and would allow a clean slate on which to build the new site. 
 
-
 ##### Navigation and layout
 
-I suggest implementing a navigation scheme inline with other festival websites. For example
+To improve the navigation of the site I suggest implementing a navigation scheme similar to other festival websites. For example:
 
-- http://www.leefest.org/home/
-- http://endoftheroadfestival.com/
+- [Leefest](http://www.leefest.org/home/)
+- [End Of The Road Festival](http://endoftheroadfestival.com/)
 
-The content on these sites is more organised with a self-contained 'information' section. This is clear signpost not only for people already attending the festival but also useful for people considering purchasing tickets. 
+The content on these sites is organised with a self-contained 'information' section. This is clear signpost not only for people already attending the festival but also useful for people considering purchasing tickets. 
 
 I would propose a revised navigation as follows:
 
@@ -130,4 +126,4 @@ Having this clear navigation would allow a focus on imagery and testimonials as 
 
 Once the navigation scheme has been finalised I will create a series of static wireframes outlining the layout of each page. 
 
-Once the wireframe layouts have been agreed I  would seek to work with a local creative / graphic designer with a view to providing a look and feel in keeping with the brand colours as defined in the current logo.
+Once the wireframe layouts have been agreed I  would seek to work with a local creative / graphic designer with a view to providing a look and feel in keeping with the brand colours as defined in the current logo/branding or as directed.
