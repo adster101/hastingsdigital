@@ -2,7 +2,7 @@
 main:
   - title: "About Us"
     url: /about-us/
-   
+    
   - title: "Our Work"
   	url: /portfolio/
     
