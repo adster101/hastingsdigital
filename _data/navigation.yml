@@ -1,4 +1,10 @@
 # main links links
 main:
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
+  - title: "About Us"
+    url: /about-us/
+   
+  - title: "Our Work"
+  	url: /portfolio/
+    
+  - title: "Contact Us"
+  	url: /contact-us/
