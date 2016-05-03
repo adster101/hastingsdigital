@@ -1,6 +1,6 @@
 ---
 permalink: "/about-us/"
-published: false
+published: true
 defaults: 
   - scope: 
       path: ""
