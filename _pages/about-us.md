@@ -1,13 +1,12 @@
 ---
-permalink: "/about-us/"
+permalink: /about-us/
 layout: single
-published: true
 ---
+
 Hastings Digital are a small independent web design and development (offering) consultancy based in the small seaside town of Hastings on the south coast of Sussex.
 
 ## What we offer
 So what do we do?  Quite simple we design and build websites that work and don't cost the earth. We also provide custom development solutions should you require something more than a straightforward contact us form. 
-
 
 We are specialists in Content Management Systems such as **Joomla!** and **Expression Engine**. 
 
