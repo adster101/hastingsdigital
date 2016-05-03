@@ -1,3 +1,1 @@
----
-layout: single
----
+Woot
