@@ -1,4 +1,7 @@
-
+---
+permalink: /about-us/
+layout: single
+---
 Hastings Digital are a small independent web design and development (offering) consultancy based in the small seaside town of Hastings on the south coast of Sussex.
 
 ## What we offer
