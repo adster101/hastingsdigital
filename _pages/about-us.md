@@ -1,4 +1,5 @@
 ---
-permalink: about-us
+permalink: "about-us"
+published: true
 ---
 Woot
