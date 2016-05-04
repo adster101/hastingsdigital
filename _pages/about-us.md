@@ -1,7 +1,7 @@
 ---
 permalink: "/about-us/"
 published: true
-layout: null
+layout: single
 Layout: single
 Title: null
 title: woohoohoo
