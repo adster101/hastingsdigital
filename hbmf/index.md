@@ -1,12 +1,8 @@
 ---
+title: HBMF - Proposal
+permalink: "/hbmf/"
 layout: page
-title: "HBMF - Proposal"
-permalink: /hbmf/
-published: true
 ---
-
-
-
 
 Introduction
 ------------

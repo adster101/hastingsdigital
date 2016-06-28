@@ -1,8 +1,11 @@
 ---
-permalink: /blog/london-calling-redesign
 title: London Calling re-design
-date: 2016-03-08
-tags: [performance,front-end-development,expression-engine]
+date: 2016-03-08 00:00:00 Z
+permalink: "/blog/london-calling-redesign"
+tags:
+- performance
+- front-end-development
+- expression-engine
 ---
 
 After working with London Calling for a few months I was asked to implement a new responsive website design that they had commissioned via Tom Buttle Design. Until this point I had been maintaining and updating the existing site so this was definitely a much bigger chunk of work.
