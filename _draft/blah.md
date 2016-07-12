@@ -1,5 +1,5 @@
 ---
 title: blah
-date: 
-layout: default
+date: '2016-07-12 22:48:00'
+layout: splash
 ---
