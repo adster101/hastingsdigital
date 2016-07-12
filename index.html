@@ -1,12 +1,13 @@
 ---
+title: A great title
 layout: splash
 author_profile: false
 header:
   overlay_image: https://placeholdit.imgix.net/~text?txtsize=100&bg=999999&txtclr=666666&txt=1200x390&w=1200&h=390
-  overlay_filter: 0.5
-  cta_label: More Info
+  overlay_filter: '0.5'
+  cta_label: About Us
   cta_url: "/about/"
-  excerpt: 
+  excerpt: We build great websites for local business and organisations
 feature_row:
 - image_path: unsplash-gallery-image-1-th.jpg
   alt: placeholder image 1
@@ -24,11 +25,6 @@ feature_row:
   title: Placeholder 3
   excerpt: This is some sample content that goes here with **Markdown** formatting.
 ---
-
-{% include feature_row %}
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+<p>{% include feature_row %}</p>
+<p>{% for post in paginator.posts %} {% include archive-single.html %}{% endfor %}</p>
+<p>{% include paginator.html %}</p>
