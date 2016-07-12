@@ -25,7 +25,6 @@ feature_row:
   title: Placeholder 3
   excerpt: This is some sample content that goes here with **Markdown** formatting.
 ---
-<p><br></p>
-<p>{% include feature_row %}</p>
-<p>{% for post in paginator.posts %} {% include archive-single.html %}{% endfor %}</p>
-<p>{% include paginator.html %}</p>
+{% include feature_row %}
+{% for post in paginator.posts %} {% include archive-single.html %}{% endfor %}
+{% include paginator.html %}
