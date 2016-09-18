@@ -109,9 +109,7 @@ markdown_ext: markdown,mkdown,mkdn,mkd,md
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: |2+
-
-
+excerpt_separator: "\n\n"
 incremental: false
 kramdown:
   input: GFM
