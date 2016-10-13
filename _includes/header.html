@@ -1,0 +1,41 @@
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+  <header class="mdl-layout__header mdl-color--blue-grey-800 mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title" style="font-family:Fira Code">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Hastings Digital" />
+        </a>
+      </span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="mdl-navigation__link {{ my_page.class }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <nav class="mdl-navigation">
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" href="">CONTACT US</a>
+      </nav>
+    </div>
+    <div class="mdl-layout__header-row mdl-layout--small-screen-only">
+      <!-- Title -->
+      <!-- Add spacer, to align navigation to the right -->
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="mdl-navigation__link {{ my_page.class }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
+
+
+
+
+</header>

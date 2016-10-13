@@ -1,0 +1,18 @@
+.mdl-navigation__link {
+  text-transform: uppercase;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.about .mdl-navigation .about,
+.portfolio .mdl-navigation .portfolio,
+.pricing .mdl-navigation .pricing,
+.services .mdl-navigation .services {
+  opacity: 1;
+}
+
+.mdl-layout-title a {
+  text-decoration: none;
+  color: #fff;
+}
