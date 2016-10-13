@@ -1,5 +1,5 @@
 ---
 title: Pricing
-layout: post
+layout: page
 class: pricing
 ---
