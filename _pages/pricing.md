@@ -1,5 +1,6 @@
 ---
 title: Pricing
 layout: page
-class: pricing
+class: mdl-navigation__link pricing
+order: 4
 ---
