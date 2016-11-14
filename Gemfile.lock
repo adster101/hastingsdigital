@@ -67,5 +67,8 @@ DEPENDENCIES
   jekyll-admin
   minima
 
+RUBY VERSION
+   ruby 2.1.4p265
+
 BUNDLED WITH
-   1.10.6
+   1.13.3

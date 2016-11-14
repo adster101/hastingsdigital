@@ -1,0 +1,6 @@
+  {% assign pages = site.pages | sort:"order" %}
+  {% for my_page in pages %}
+    {% if my_page.title %}
+    <a class="{{ my_page.class }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+    {% endif %}
+  {% endfor %}

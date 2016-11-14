@@ -1,5 +1,6 @@
 ---
 title: Portfolio
 layout: page
-class: portfolio
+class: mdl-navigation__link portfolio
+order: 3
 ---

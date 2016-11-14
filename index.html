@@ -3,15 +3,17 @@ layout: default
 class: home
 ---
 
-<section class="mdl-grid mdl-grid--no-spacing">
-  <div class="mdl-typography--body-1 mdl-cell mdl-cell--6-col-desktop">
-    <h2>Hastings Digital</h2>
-    <p>Hello, we're Hastings Digital a small team of developers and designers based in the East Sussex town of Hastings. We offer a range of <a href="/services">services</a> at affordable prices.</p>
+<div class="mdl-grid mdl-grid--no-spacing">
+  <section class="mdl-cell mdl-cell--12-col homepage-intro">
+    <dl class="mdl-typography--body-1">
+      <dt>Hasting Digital</dt>
+      <dd>
+        Hello, we're Hastings Digital a small team of developers and designers based in the East Sussex town of Hastings. We offer a range of <a href="/services">services</a> at affordable prices.
+      </dd>
+    </dl>
+  </section>
 </div>
-<div class=" mdl-cell mdl-cell--6-col-desktop">
-</div>
-</section>
-<div class="mdl-grid">
+<div class="mdl-grid content">
   {% assign posts = site.posts | where: "category", "portfolio" %}
   {% for post in posts %}
   <section class="mdl-cell mdl-card mdl-shadow--2dp mdl-color--contrast">
