@@ -29,7 +29,8 @@ collections:
     permalink: /:title
     output: true
     layout: default
-
+  posts:
+    permalink: /:categories/:title
 defaults:
   -
     scope:
@@ -37,7 +38,3 @@ defaults:
       type: "_posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
-      category:
-        - portfolio
-        - joomla
-        - mobile

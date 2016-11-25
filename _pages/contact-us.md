@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 page-class: contact
-class: contact mdl-button mdl-js-button mdl-button--raised mdl-button--accent
+class: contact mdl-navigation__link 
 order: 5
 layout: page
 ---

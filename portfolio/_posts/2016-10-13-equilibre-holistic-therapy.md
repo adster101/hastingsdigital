@@ -1,9 +1,5 @@
 ---
 title: Equilibre
-categories:
-- portfolio
-- joomla
-- mobile
 image: 'background: #fbfdf9 url(''/images/equilibre-logo.png'') center right no-repeat'
 card-title-class: ""
 ---
