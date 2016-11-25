@@ -2,15 +2,15 @@
 title: Round Table
 layout: post
 date: '2016-10-11 10:00:16 +0100'
-category:
+categories:
 - web design
 - email and hosting
 - joomla
 - portfolio
-image: 'background: #000 url(''/images/round-table-logo.jpg'') top right no-repeat'
+image: "background: #000 url('/images/round-table-logo.jpg') 175px top no-repeat;background-size:150px'"
 ---
 
-We were pleased to be asked to build a website for the Hastings division of the Round Table.
+We built a website for the Hastings division of the Round Table.
 
 The Hastings division of the Round Table are one of the busiest tables in the country organising the popular Hasting Beer and Music festival every year.
 

@@ -1,11 +1,11 @@
 ---
-category:
+categories:
 - portfolio
 - expressionengine
 - mobile
-- ''
 title: London Calling
 layout: post
+image: "background: #d4d5d6 url('/images/london_skyline.png') center top no-repeat;'"
 ---
 
-We've been maintaining the London Calling site for a while and have recently rebuilt the site so it's mobile friendly with a fresh new look.   
+CMS and website maintenance for popular London marketing agency.
