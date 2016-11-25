@@ -13,7 +13,7 @@ class: home
     </dl>
   </section>
 </div>
-<div class="mdl-grid">
+<div class="mdl-grid homepage-container">
 
   {% assign posts = site.posts | where: "categories", "portfolio" %}
   {% for post in posts limit:3 %}
