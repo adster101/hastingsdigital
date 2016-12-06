@@ -1,0 +1,22 @@
+.main-nav {
+  @include mq($from: tablet) {
+    float:right;
+    display:block;
+    margin-top: 0;
+  }
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration:none;
+  padding: $inuit-global-spacing-unit-small;
+  color: $color-gray;
+  
+  @include mq($from: tablet) {
+  }
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}

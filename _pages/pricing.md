@@ -1,6 +1,6 @@
 ---
 title: Pricing
 layout: page
-class: mdl-navigation__link pricing
+class: main-nav__link pricing
 order: 4
 ---

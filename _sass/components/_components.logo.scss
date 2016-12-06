@@ -1,0 +1,12 @@
+.logo {
+  display:block;
+}
+
+.logo__image {
+
+  margin-top: $inuit-global-spacing-unit-small;
+  height: 24px;
+  float:left;
+  // Include the clearfix mixin 
+  @include inuit-clearfix();
+}

@@ -1,0 +1,75 @@
+.hero {
+  background-color: $color-white;
+  position: relative;
+
+  &:before {
+      box-shadow: inset 0 10px 10px -6px rgba(0,0,0,.3);
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      pointer-events: none;
+  }
+
+}
+
+.hero__image {
+
+  background-size:cover;
+  height: 300px;
+  background-position: center;
+
+  @include mq(tablet) {
+    height: 372px;
+  }
+
+  @include mq(desktop) {
+    height: 420px;
+  }
+}
+
+.hero__content {
+
+
+  @include mq($until: desktop) {
+    padding: $inuit-global-spacing-unit;
+  }
+
+  @include mq(desktop) {
+    padding: $inuit-global-spacing-unit-large;
+  }
+
+  @include mq(wide) {
+    padding: $inuit-global-spacing-unit-huge;
+  }
+
+  color: $color-gray-light;
+
+  a {
+    color: $color-gray-light;
+  }
+
+}
+
+.hero__title {
+
+  @include mq($until: desktop) {
+    @include inuit-font-size(20px);
+  }
+
+  @include mq(desktop) {
+    @include inuit-font-size(24px);
+  }
+
+  @include mq(wide) {
+    @include inuit-font-size(30px);
+  }
+
+  color: $color-gray-light;
+  font-weight: 700;
+
+}

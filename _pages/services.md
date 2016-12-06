@@ -1,6 +1,6 @@
 ---
 title: Services
-class: mdl-navigation__link services
+class: main-nav__link services
 layout: page
 order: 2
 ---

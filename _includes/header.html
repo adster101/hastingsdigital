@@ -1,28 +1,13 @@
-<!-- Uses a header that scrolls with the text, rather than staying
-  locked at the top -->
-  <header class="mdl-layout__header mdl-color--blue-grey-800 mdl-layout__header--waterfall">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title" style="font-family:Fira Code">
-        <a href="/">
-          <img src="/images/logo.svg" alt="Hastings Digital" />
-        </a>
-      </span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        {% include nav.html %}
-      </nav>
-    </div>
-    <div class="mdl-layout__header-row mdl-layout--small-screen-only">
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        {% include nav.html %}
-      </nav>
-    </div>
-
-
-
-
+<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
+<header class="masthead">
+  <div class="o-wrapper">
+    <!-- Logo/Brand/Title -->
+    <a class="logo" href="/">
+      <img class="logo__image" src="/images/logo.svg" alt="Hastings Digital" />
+    </a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      {% include nav.html %}
+    </nav>
+  </div>
 </header>
