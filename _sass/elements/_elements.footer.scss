@@ -1,17 +1,11 @@
 footer {
+  
   color:$color-white;
-  background-color: $color-brand;
+  background-color: $color-black;
+  padding: $inuit-global-spacing-unit-small;
 
-  nav {
-
-    @include mq($until: tablet) {
-      margin-bottom: $inuit-global-spacing-unit-large;
-    }
-
-    a {
-      color:$color-white;
-      text-decoration: none;
-      display:block;
-    }
+  @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit;
   }
+
 }

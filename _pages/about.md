@@ -4,6 +4,7 @@ layout: page
 class: main-nav__link about
 date: '2016-10-11 08:53:28'
 order: 1
+page-class: about
 ---
 
 Hastings Digital is a small but perfectly formed web design and development agency owned and run by Adam Rifat in the heart of Hastings, East Sussex.
