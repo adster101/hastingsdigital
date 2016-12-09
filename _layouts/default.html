@@ -2,12 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <body class="{{ page.page-class }}">
-    <div class="mdl-layout mdl-js-layout mdl-layout--no-drawer-button mdl-layout--no-desktop-drawer-button mdl-layout--fixed-header">
-      {% include header.html %}
-      <main class="mdl-layout__content mdl-color-text--grey-600" aria-label="Content">
-          {{ content }}
-        {% include footer.html %}
-      </main>
-    </div>
+    {% include header.html %}
+    <main class="" aria-label="Content">
+        {{ content }}
+      {% include footer.html %}
+    </main>
   </body>
 </html>

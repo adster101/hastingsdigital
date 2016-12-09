@@ -1,0 +1,39 @@
+.main-nav {
+  @include mq($from: tablet) {
+    float:right;
+    display:block;
+    margin-top: 0;
+  }
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration:none;
+  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-small 9px $inuit-global-spacing-unit-small ;
+  color: $color-gray;
+
+  @include mq($from: tablet) {
+    margin-bottom: inherit;
+    border-bottom:3px solid transparent;
+
+    &:hover, &:active,  {
+      text-decoration: none;
+      border-bottom:3px solid $color-brand;
+    }
+  }
+
+  &:hover, &:active {
+    text-decoration: none;
+    color: $color-brand;
+  }
+}
+
+@include mq($from: tablet) {
+  .about nav .about, .services nav .services, .portfolio nav .portfolio {
+    text-decoration: none;
+    border-bottom:3px solid $color-brand;
+    color: $color-brand;
+    
+  }
+}

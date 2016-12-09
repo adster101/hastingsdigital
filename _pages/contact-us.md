@@ -1,7 +1,7 @@
 ---
 title: Contact
 page-class: contact
-class: contact mdl-navigation__link
+class: contact main-nav__link
 order: 5
 layout: page
 ---

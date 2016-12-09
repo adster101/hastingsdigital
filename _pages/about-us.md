@@ -1,21 +1,12 @@
 ---
 title: About
 layout: page
-class: mdl-navigation__link about
+class: main-nav__link about
 date: '2016-10-11 08:53:28'
 order: 1
+page-class: about
 ---
-<ul class='mdl-list mdl-list__item--three-line'>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">khkjhkjh</span>
-  </li>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">kjhjk</span>
-  </li>
-  <li class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">hjhgjhg</span>
-  </li>
-</ul>
+
 Hastings Digital is a small but perfectly formed web design and development agency owned and run by Adam Rifat in the heart of Hastings, East Sussex.
 
 We have over eight years of experience working in the web and IT sector and we provide a full range of services from email and website hosting, website design through to bespoke development work and performance optimisation so whether you need an email address or if you already have a website which needs optimising we can help.
