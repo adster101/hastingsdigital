@@ -1,11 +1,31 @@
 footer {
-  
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-white;
+  }
+
   color:$color-white;
-  background-color: $color-black;
+  border-top:3px solid $color-yellow;
+  background-color: $color-blue-dark;
   padding: $inuit-global-spacing-unit-small;
 
   @include mq($from: tablet) {
     padding: $inuit-global-spacing-unit;
   }
+
+  nav {
+
+    @include mq($until: tablet) {
+      margin-bottom: $inuit-global-spacing-unit-large;
+    }
+
+    a {
+      color:$color-white;
+      text-decoration: none;
+      display:block;
+    }
+  }
+
+
 
 }

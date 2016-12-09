@@ -103,6 +103,7 @@
 @import "../bower_components/inuitcss/generic/generic.normalize";
 @import "../bower_components/inuitcss/generic/generic.reset";
 @import "../bower_components/inuitcss/generic/generic.shared";
+@import "generic/generic.backgrounds";
 
 
 
@@ -114,6 +115,7 @@
 @import "elements/_elements.header";
 @import "elements/_elements.footer";
 @import "elements/_elements.headings";
+@import "elements/_elements.blockquote";
 @import "../bower_components/inuitcss/elements/elements.headings";
 @import "../bower_components/inuitcss/elements/elements.images";
 @import "../bower_components/inuitcss/elements/elements.tables";

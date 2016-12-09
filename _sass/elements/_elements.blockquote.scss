@@ -1,0 +1,10 @@
+
+
+  blockquote.testimonial  {
+    font-weight: 400;
+    @include inuit-font-size(24px);
+    font-style: italic;
+    padding: $inuit-global-spacing-unit-huge;
+    color: $color-black;
+    text-align: center;
+  }
