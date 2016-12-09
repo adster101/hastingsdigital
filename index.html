@@ -3,16 +3,18 @@ layout: default
 class: home
 ---
 
-<div class="mdl-grid mdl-grid--no-spacing">
-  <section class="mdl-cell mdl-cell--12-col homepage-intro">
-    <dl class="mdl-typography--body-1">
-      <dt>Hasting Digital</dt>
-      <dd>
+<section class="mdl-grid mdl-grid--no-spacing">
+  <div class="mdl-cell mdl-cell--6-col">
+    <h1 class="mdl-typography--body-1">
+		      Hasting Digital
+     </h1>
         <p>Hello! Welcome to Hastings Digital a small website design and development consultancy based Hastings, East Sussex. We provide a range of <a href="services">services</a> including website design, development and marketing. Read more <a href="about">about us</a> or view our portfolio.</p>
-      </dd>
-    </dl>
+				</div>
+				<div class="mdl-cell mdl-cell--6-col">
+						<div style="background: url('https://placeholdit.imgix.net/~text?txtsize=50&bg=999999&txtclr=666666&txt=Image%20goes%20here&w=978&h=450');height:300px"></div>
+				</div>
   </section>
-</div>
+
 <div class="mdl-grid homepage-container">
 
   {% assign posts = site.posts | where: "categories", "portfolio" %}
