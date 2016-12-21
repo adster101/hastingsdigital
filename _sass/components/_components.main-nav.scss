@@ -1,4 +1,6 @@
 .main-nav {
+  display:none;
+
   @include mq($from: tablet) {
     float:right;
     display:block;
@@ -16,6 +18,7 @@
   @include mq($from: tablet) {
     margin-bottom: inherit;
     border-bottom:3px solid transparent;
+    transition: border 0.3s;
 
     &:hover, &:active,  {
       text-decoration: none;
@@ -34,6 +37,6 @@
     text-decoration: none;
     border-bottom:3px solid $color-brand;
     color: $color-brand;
-    
+
   }
 }

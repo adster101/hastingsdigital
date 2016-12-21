@@ -4,9 +4,9 @@
 
 .logo__image {
 
-  margin-top: $inuit-global-spacing-unit-small;
-  height: 24px;
+  margin-top: $inuit-global-spacing-unit-tiny;
+  height: 36px;
   float:left;
-  // Include the clearfix mixin 
+  // Include the clearfix mixin
   @include inuit-clearfix();
 }

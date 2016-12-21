@@ -1,0 +1,33 @@
+---
+title: Work
+layout: work
+class: main-nav__link portfolio
+order: 1
+permalink: /work/
+page-class: work
+---
+
+{% assign posts = site.posts | where: "categories", "work" %}
+
+{% for post in posts limit:3 %}
+
+<section class="hero hero--work">
+    <div class="o-layout o-layout--flush">
+      <div class="o-layout__item u-1/2@tablet u-1/2@wide">
+        <div class="hero__content">
+          <h1 class="hero__title">{{ post.title }}</h1>
+          {{ post.excerpt }}
+          <a href="{{ post.url }}" class="">
+            Read article
+          </a>
+        </div>
+    </div><!--
+  --><div class="o-layout__item u-1/2@tablet u-1/2@wide">
+        <div class="handset">
+          <img src="{{ post.image }}" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endfor %}
