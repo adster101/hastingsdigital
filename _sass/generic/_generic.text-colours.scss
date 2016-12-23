@@ -1,0 +1,7 @@
+.white {
+  color: $color-white;
+}
+
+.lede {
+  @include inuit-font-size(21px);
+}

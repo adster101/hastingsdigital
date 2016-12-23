@@ -32,19 +32,10 @@
   }
 
   @include mq(wide) {
-    padding: $inuit-global-spacing-unit-huge;
+    padding: $inuit-global-spacing-unit-huge $inuit-global-spacing-unit-huge $inuit-global-spacing-unit-huge calc((100vw - 1152px) / 2);
   }
 
-  color: $color-gray-light;
 
-}
-
-.hero--work {
-  .hero__content {
-    @include mq(wide) {
-      padding: $inuit-global-spacing-unit-huge $inuit-global-spacing-unit-huge $inuit-global-spacing-unit-huge calc((100vw - 1152px) / 2);
-    }
-  }
 }
 
 .hero__content-link {
@@ -52,20 +43,14 @@
 }
 
 .hero__title {
-
+  font-weight: 300;
   @include mq($until: desktop) {
     @include inuit-font-size(20px);
   }
+}
 
-  @include mq(desktop) {
-    @include inuit-font-size(24px);
-  }
-
-  @include mq(wide) {
-    @include inuit-font-size(30px);
-  }
-
-  color: $color-gray-light;
-  font-weight: 700;
+.her__tagline {
+  font-weight: 300;
+  @include inuit-font-size(20px);
 
 }
