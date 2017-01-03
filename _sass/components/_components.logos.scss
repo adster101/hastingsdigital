@@ -1,0 +1,16 @@
+.c-logo {
+  border: 1px solid #EEEEEE;
+  padding-bottom: 50%;
+  height: 0;
+  position: relative;
+
+  > img {
+    position: absolute;
+    left: 50%;
+    max-width: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70%;
+    width: auto;
+  }
+}
