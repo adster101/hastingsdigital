@@ -1,13 +1,17 @@
-section {
+// section {
+//
+//   margin-bottom: $inuit-global-spacing-unit;
+//
+//   @include mq(desktop){
+//     margin-bottom: $inuit-global-spacing-unit-large;
+//   }
+//
+//   @include mq(wide){
+//     margin-bottom: $inuit-global-spacing-unit-huge;
+//   }
+//
+// }
 
-  margin-bottom: $inuit-global-spacing-unit;
-
-  @include mq(desktop){
-    margin-bottom: $inuit-global-spacing-unit-large;
-  }
-
-  @include mq(wide){
-    margin-bottom: $inuit-global-spacing-unit-huge;
-  }
-
+section + section {
+  margin-top: 0;
 }
