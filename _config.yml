@@ -38,3 +38,13 @@ defaults:
       type: "_posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
+
+exclude:
+- gruntfile.js
+- ".gitignore"
+- php.ini
+- bower.json
+- package.json
+- node_modules
+- wp-content
+- bower_components
