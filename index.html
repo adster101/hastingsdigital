@@ -66,8 +66,11 @@ class: home
 
 <section class="light-grey-bg">
   <div class="o-wrapper">
-    <blockquote class="testimonial">
-      Totes amaze balls
-    </blockquote>
+    {% for testimonial in site.data.testimonials %}
+      <blockquote class="testimonial">
+        <p>{{ testimonial.quote }}</p>
+        <footer>&mdash;{{ testimonial.name }}</footer>
+      </blockquote>
+    {% endfor %}
   </div>
 </section>
