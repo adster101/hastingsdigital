@@ -1,0 +1,10 @@
+<section class="light-grey-bg">
+  <div class="o-wrapper">
+    {% for testimonial in site.data.testimonials %}
+      <blockquote class="testimonial">
+        <p>{{ testimonial.quote }}</p>
+        <footer>&mdash;{{ testimonial.name }}</footer>
+      </blockquote>
+    {% endfor %}
+  </div>
+</section>
