@@ -48,3 +48,6 @@ exclude:
 - node_modules
 - wp-content
 - bower_components
+- Gemfile
+- Gemgile.lock
+- README.md
