@@ -38,7 +38,8 @@ defaults:
       type: "_posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
-
+sass:
+    style: compressed
 exclude:
 - gruntfile.js
 - ".gitignore"
