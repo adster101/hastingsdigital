@@ -1,9 +1,11 @@
 - icon: \#icon-phone
-  title: Mobile friendly
-  text: All the sites We build are high-quality <a href="/services">mobile friendly websites</a> that are fast and won't break the bank.
-- icon: \#icon-bubbles2
-  title: Experienced
-  text: We work with businesses small and large to ensure that your website works hard for you and your business.
-- icon: \#icon-wrench
-  title: Progressive
-  text: The web moves fast and we keep pace offering the latest web technology at an affordable price.
+  title: Responsive
+  text: The mobile revolution will not be televised. Luckily, all the websites we build are fast, high-quality and mobile friendly ensuring that your website will always look great whether on a 60" plasma TV or a tiny smartphone.
+  link: /services
+- icon: \#icon-hammer
+  title: Apps
+  text: More and more the line between a website site and an app is getting blurred. We keep pace with technology so we can offer the latest web apps at an affordable price.
+
+# - icon: \#icon-bubbles2
+#   title: Experienced
+#   text: We've worked with businesses large and small

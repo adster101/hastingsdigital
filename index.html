@@ -2,16 +2,19 @@
 layout: default
 class: home
 title: Web Design in Hastings | Fast, Friendly Service
-excerpt: Hastings Digital offer a complete website design and build service including hosting and email.
+excerpt: At Hastings Digital we provide a friendly website design and build servive via our base in Hastings, East Sussex. Our experience gives us the edge when it comes to building fast, functional and affordable websites. Get in touch today and let us know about your project!
 ---
 
 <section class="hero dark-blue-bg">
   <div class="hero__content center">
-    <h1 class="hero__title white">Hi. We are Hastings Digital and we <strong>design</strong> and <strong>build</strong><br /> high quality, affordable <strong>websites</strong>.</h1>
-    <p class="lede white">Based in the lively seaside town of Hastings we are a small, friendly agency offering a full website design and build service.</p>
+    <h1 class="hero__title white">Hello! We are Hastings Digital and we <strong>design</strong> and <strong>build</strong><br /> high quality, cost-effective <strong>websites</strong>.</h1>
+    <p class="lede white">We provide a complete website design and build service including hosting and email based in the lovely seaside town of Hastings.</p>
     <p class="u-margin-bottom-none">
       <a class="c-btn c-btn--ghost c-btn--tertiary" href="/about">
         About Us
+      </a>
+      <a class="c-btn c-btn--ghost c-btn--tertiary u-margin-left" href="/contact-us">
+        Get in touch
       </a>
     </p>
   </div>
@@ -22,13 +25,14 @@ excerpt: Hastings Digital offer a complete website design and build service incl
     <div class="o-layout o-layout">
       {% for usp in site.data.usps %}
       <div class="o-layout__item u-1/2@tablet u-1/2@desktop u-1/2@wide">
-        <div class="o-media">
+        <div class="o-media u-margin-bottom">
           <svg class="icon icon--large o-media__img">
             <use xlink:href="{{ usp.icon }}"></use>
           </svg>
           <div class="o-media__body">
-            <h2>{{ usp.title }}</h2>
+            <h3>{{ usp.title }}</h3>
             <p>{{ usp.text }} </p>
+            <p><a class="c-btn c-btn--secondary c-btn--small" href="{{ usp.link }}">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -39,7 +43,8 @@ excerpt: Hastings Digital offer a complete website design and build service incl
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">
-    <h2>Our clients</h2>
+    <h2>Our work</h2>
+    <p>We work with companies large and small but whatever the size we like to establish long lasting relationships with the people we work with so we can offer the right guidance. See some of the companies we're proud to work with below.</p>   
     <div class="o-layout">
       {% for member in site.data.clients %}
         <div class="o-layout__item u-1/3@tablet u-1/3@desktop u-1/3@wide">
