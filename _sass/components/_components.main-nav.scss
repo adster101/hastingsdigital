@@ -33,7 +33,7 @@
 }
 
 @include mq($from: tablet) {
-  .about nav .about, .services nav .services, .portfolio nav .portfolio {
+  .about nav .about, .services nav .services, .work nav .portfolio, .contact nav .contact {
     text-decoration: none;
     border-bottom:3px solid $color-brand;
     color: $color-brand;

@@ -1,11 +1,14 @@
-- icon: \#icon-phone
-  title: Responsive
+- icon: \#icon-mobile
+  title: Responsive Website Design
   text: The mobile revolution will not be televised. Luckily, all the websites we build are fast, high-quality and mobile friendly ensuring that your website will always look great whether on a 60" plasma TV or a tiny smartphone.
   link: /services
-- icon: \#icon-hammer
-  title: Apps
+- icon: \#icon-rocket
+  title: Web Apps
   text: More and more the line between a website site and an app is getting blurred. We keep pace with technology so we can offer the latest web apps at an affordable price.
-
+- icon: \#icon-cogs
+  title: Solution development
+  text: If you require more than a simple brochure site we offer bespoke development and backend design solutions that can get you idea off the ground.
+  link: /services
 # - icon: \#icon-bubbles2
 #   title: Experienced
 #   text: We've worked with businesses large and small
