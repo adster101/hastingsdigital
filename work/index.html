@@ -1,5 +1,6 @@
 ---
 title: Web Design Portfolio
+tagline: We provide expert advice and guidance to ensure your website works for you from the start.
 layout: page
 permalink: /work/
 page-class: work
@@ -8,8 +9,7 @@ page-class: work
 {% assign posts = site.posts | where: "categories", "work" %}
 
 {% for post in posts limit:3 %}
-
-<section class="hero hero--work">
+  <section class="hero hero--work">
     <div class="o-layout o-layout--flush">
       <div class="o-layout__item u-1/2@tablet u-1/2@wide">
         <div class="hero__content">
@@ -27,5 +27,4 @@ page-class: work
       </div>
     </div>
   </section>
-
 {% endfor %}

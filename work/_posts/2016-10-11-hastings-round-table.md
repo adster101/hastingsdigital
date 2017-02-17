@@ -1,11 +1,12 @@
 ---
-title: Round Table
-layout: post
+title: Hastings Round Table
+tagline: We built a website for the Hastings division of the Round Table.
+layout: page
 date: '2016-10-11 10:00:16 +0100'
-image: "background: #000 url('/images/round-table-logo.jpg') 175px top no-repeat;background-size:150px'"
+excerpt: Woot
 ---
 
-We built a website for the Hastings division of the Round Table.
+![Round Table Logo](/images/round-table-logo.jpg)
 
 The Hastings division of the Round Table are one of the busiest tables in the country organising the popular Hasting Beer and Music festival every year.
 

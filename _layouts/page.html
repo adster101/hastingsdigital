@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-  <article>
-    <header class="page-header">
-      <div class="o-wrapper">
-      <h1 class="u-h4 white">
-        <strong>
-          {{ page.title | escape }}
-        </strong>
-      </h1>
-    </div>
-    </header>
-  </article>
-  <div class="">
+
+<article>
+  <header class="page-header center">
+    <h1 class="u-h4 white" itemprop="name">
+      <strong>
+        {{ page.title | escape }}
+      </strong>
+    </h1>
+    <h2 class="u-h5 white">
+      {{ page.tagline | escape }}
+    </h2>
+  </header>
+  <div class="o-wrapper" itemprop="articleBody">
     {{ content }}
   </div>
-
-  {% include testimonials.html %}
+</article>
+{% include testimonials.html %}
