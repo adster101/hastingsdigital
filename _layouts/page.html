@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-
-  <article class="o-wrapper">
-    <header class="post-header">
-      <h1 class="mdl-typography--title">
-        {{ page.title | escape }}
+  <article>
+    <header class="page-header">
+      <div class="o-wrapper">
+      <h1 class="u-h4 white">
+        <strong>
+          {{ page.title | escape }}
+        </strong>
       </h1>
-    </header>
-    <div class="">
-      {{ content }}
     </div>
+    </header>
   </article>
+  <div class="">
+    {{ content }}
+  </div>
 
-{% include testimonials.html %}
+  {% include testimonials.html %}
