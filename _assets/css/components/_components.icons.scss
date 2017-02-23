@@ -1,0 +1,19 @@
+/*
+ * Pretty icons
+ * 1. Parent item needs to be position: relative for this to work
+ */
+.icon {
+  fill: $color-white;
+  vertical-align: text-bottom;
+}
+
+.icon--small {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--large {
+  width: 36px;
+  height: 36px;
+  fill: $color-black;
+}

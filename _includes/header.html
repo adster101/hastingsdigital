@@ -1,13 +1,14 @@
 <!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<header class="masthead">
-  <div class="o-wrapper">
+<header class="masthead o-wrapper">
     <!-- Logo/Brand/Title -->
     <a class="logo" href="/">
-      <img class="logo__image" src="/images/logo.svg" alt="Hastings Digital" />
+      <svg class="icon icon--large logo__image">
+        <use xlink:href="#icon-embed2"></use>
+      </svg>
+      <span class="">&nbsp;Hastings Digital</span>
     </a>
     <!-- Navigation -->
     <nav class="main-nav">
       {% include nav.html %}
     </nav>
-  </div>
 </header>

@@ -1,0 +1,16 @@
+// Header styles
+// Woot!
+
+.masthead {
+  @include inuit-clearfix();
+  padding: $inuit-global-spacing-unit-small 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.page-header {
+  background-color: $color-brand;
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+}

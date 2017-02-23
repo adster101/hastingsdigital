@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<article>
-  <header class="page-header center">
+<section class="page-header">
+  <header class="o-wrapper">
     <h1 class="u-h4 white" itemprop="name">
       <strong>
         {{ page.title | escape }}
@@ -13,8 +13,8 @@ layout: default
       {{ page.tagline | escape }}
     </h2>
   </header>
+</section>
   <div class="o-wrapper" itemprop="articleBody">
     {{ content }}
   </div>
-</article>
 {% include testimonials.html %}

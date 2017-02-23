@@ -1,0 +1,13 @@
+.logo {
+  flex-grow: 1;
+  color: $color-black;
+  @include inuit-font-size(24px);
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  svg {
+    fill: $color-black;
+  }
+}

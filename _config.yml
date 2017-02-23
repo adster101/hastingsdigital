@@ -40,6 +40,15 @@ defaults:
       layout: "default"
 sass:
     style: compressed
+# Assets autoprefixer
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+gems:
+  - jekyll-feed
+  - jekyll-assets
 exclude:
 - gruntfile.js
 - ".gitignore"
