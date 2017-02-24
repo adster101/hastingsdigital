@@ -1,21 +1,20 @@
 .main-nav {
-  display:none;
+
+  display: flex;
+  justify-content: space-between;
 
   @include mq($from: tablet) {
-    float:right;
-    display:block;
-    margin-top: 0;
+    justify-content: flex-end;
+    flex-grow:1;
   }
 }
 
 .main-nav__link {
-  text-transform: uppercase;
   display: inline-block;
   text-decoration:none;
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-small 9px $inuit-global-spacing-unit-small ;
   color: $color-gray;
 
-  @include mq($from: tablet) {
     margin-bottom: inherit;
     border-bottom:3px solid transparent;
     transition: border 0.3s;
@@ -24,7 +23,7 @@
       text-decoration: none;
       border-bottom:3px solid $color-brand;
     }
-  }
+
 
   &:hover, &:active {
     text-decoration: none;
@@ -32,11 +31,8 @@
   }
 }
 
-@include mq($from: tablet) {
-  .about nav .about, .services nav .services, .work nav .portfolio, .contact nav .contact {
-    text-decoration: none;
-    border-bottom:3px solid $color-brand;
-    color: $color-brand;
-
-  }
+.about nav .about, .services nav .services, .work nav .portfolio, .contact nav .contact {
+  text-decoration: none;
+  border-bottom:3px solid $color-brand;
+  color: $color-brand;
 }
