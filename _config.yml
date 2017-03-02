@@ -51,6 +51,7 @@ assets:
 gems:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-sitemap
 exclude:
 - gruntfile.js
 - ".gitignore"
