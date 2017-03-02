@@ -14,7 +14,8 @@
   text-decoration:none;
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-small 9px $inuit-global-spacing-unit-small ;
   color: $color-gray;
-
+  @include inuit-font-size(19.2px, 1.25);
+  font-weight: 300;
     margin-bottom: inherit;
     border-bottom:3px solid transparent;
     transition: border 0.3s;

@@ -13,6 +13,7 @@ tags:
 - Content Management
 - Joomla
 - Web design
+image: "/images/round-table-site-header.png"
 ---
 
 ![Round Table Logo](/images/round-table-logo.jpg)
