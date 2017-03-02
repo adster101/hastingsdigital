@@ -19,5 +19,5 @@ RewriteEngine On
 # Rewrite some old urls 13/02/2017
 Redirect 301 "/about-us" /about/
 Redirect 301 "/contact-us" /contact/
-Redirect 301 "/portfolio" /work/
+Redirect 301 "/work/" /portfolio/
 Redirect 301 "/disclaimer" /

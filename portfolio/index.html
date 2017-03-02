@@ -1,14 +1,14 @@
 ---
-title: Web Design Portfolio
-tagline: We provide expert advice and guidance to ensure your website works for you from the start.
+title: Our Work
+tagline: We design and build websites that are fast, easy to use, work everywhere and look great! See some of our latest work below...
 layout: page
-permalink: /work/
 page-class: work
+permalink: "/portfolio/"
 ---
 
-{% assign posts = site.posts | where: "categories", "work" %}
+{% assign posts = site.portfolio | where: "categories", "portfolio" %}
 
-{% for post in posts limit:3 %}
+{% for post in posts reversed %}
   <section class="hero hero--work">
     <div class="o-layout o-layout--flush">
       <div class="o-layout__item u-1/2@tablet u-1/2@wide">

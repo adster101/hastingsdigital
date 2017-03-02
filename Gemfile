@@ -26,7 +26,7 @@ gem "autoprefixer-rails"
 # group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
-gem 'jekyll-admin', group: :jekyll_plugins
+gem 'jekyll-admin', '~> 0.4.0', group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

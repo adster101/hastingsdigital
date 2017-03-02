@@ -26,7 +26,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-admin (0.3.0)
+    jekyll-admin (0.4.0)
       addressable (~> 2.4)
       jekyll (~> 3.3)
       sinatra (~> 1.4)
@@ -91,14 +91,14 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   jekyll (= 3.3)
-  jekyll-admin
+  jekyll-admin (~> 0.4.0)
   jekyll-assets
   jekyll-feed (~> 0.6)
   jekyll-sitemap
   minima
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.1.4p265
 
 BUNDLED WITH
    1.14.3

@@ -21,23 +21,14 @@ url: "http://example.com/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-markdown:
-
 collections:
-  pages:
-    permalink: /:title
-    output: true
-    layout: default
+  portfolio:
+    title: Portfolio
+    permalink: "/:categories/:path/"
+    outut: true
   posts:
     permalink: /:categories/:title
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "_posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "default"
+    output: true
 sass:
     style: compressed
 # Assets autoprefixer
