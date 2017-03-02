@@ -24,8 +24,8 @@ github_username:  jekyll
 collections:
   portfolio:
     title: Portfolio
-    permalink: "/:categories/:path/"
-    outut: true
+    permalink: "/portfolio/:path/"
+    output: true
   posts:
     permalink: /:categories/:title
     output: true
