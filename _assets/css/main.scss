@@ -76,6 +76,9 @@
 
 // SETTINGS
 @import "settings/settings.config";
+$inuit-global-font-size:    18px !default;
+$inuit-global-line-height:    27px !default;
+
 @import "../../bower_components/inuitcss/settings/settings.core";
 @import "settings/settings.global";
 @import "settings/settings.colors";

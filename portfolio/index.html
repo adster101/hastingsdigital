@@ -1,6 +1,7 @@
 ---
 title: Our Work
-tagline: We design and build websites that are fast, easy to use, work everywhere and look great! See some of our latest work below...
+tagline: We design and build websites that are fast, easy to use, work everywhere
+  and look great! See some of our latest work below...
 layout: page
 page-class: work
 permalink: "/portfolio/"
@@ -9,16 +10,25 @@ permalink: "/portfolio/"
 {% assign posts = site.portfolio | where: "categories", "portfolio" %}
 
 {% for post in posts reversed %}
-  <section class="hero hero--work">
-    <div class="o-layout o-layout--flush">
+  <section class="portfolio">
+    <div class="o-layout o-layout--huge">
       <div class="o-layout__item u-1/2@tablet u-1/2@wide">
-        <div class="hero__content">
-          <h1 class="hero__title">{{ post.title }}</h1>
+					<header class="portfolio__header">
+							<h2>{{ post.title }}</h2>
+							<time class="u-margin-bottom-small">{{ post.date }}</time>
+								<ul class="o-list-inline u-margin-bottom-none">
+									{%for tag in post.tags %}
+									<li class="o-list-inline__item">
+										{{ tag }}
+									</li>
+									{% endfor %}
+							</ul>
+					</header>
+
           {{ post.excerpt }}
-          <a href="{{ post.url }}" class="">
+          <a href="{{ post.url }}" class="o-btn">
             Read article
           </a>
-        </div>
     </div><!--
   --><div class="o-layout__item u-1/2@tablet u-1/2@wide">
         <div class="handset">
