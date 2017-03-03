@@ -1,34 +1,30 @@
 ---
-title: Our Work
-tagline: We design and build websites that are fast, easy to use, work everywhere
-  and look great! See some of our latest work below...
+title: Our work
+tagline: We don't just design and build websites. We also offer custom development
+  and ongoing maintenance for existing sites. Check out some of of our work below.
 layout: page
-page-class: work
+page-class: portfolio
 permalink: "/portfolio/"
 ---
 
 {% assign posts = site.portfolio | where: "categories", "portfolio" %}
 
 {% for post in posts reversed %}
-  <section class="portfolio">
+  <section class="work">
     <div class="o-layout o-layout--huge">
       <div class="o-layout__item u-1/2@tablet u-1/2@wide">
-					<header class="portfolio__header">
-							<h2>{{ post.title }}</h2>
-							<time class="u-margin-bottom-small">{{ post.date }}</time>
-								<ul class="o-list-inline u-margin-bottom-none">
-									{%for tag in post.tags %}
-									<li class="o-list-inline__item">
-										{{ tag }}
-									</li>
-									{% endfor %}
-							</ul>
+					<header class="work__header">
+							<h2 class="u-margin-bottom-none">{{ post.title }}</h2>
+							<time class="u-margin-bottom-small">{{ post.date | date: "%b %Y" }}</time>
+
 					</header>
 
           {{ post.excerpt }}
-          <a href="{{ post.url }}" class="o-btn">
-            Read article
-          </a>
+					<p>
+						<a href="{{ post.url }}" class="o-btn">
+							Read article
+						</a>
+					</p>
     </div><!--
   --><div class="o-layout__item u-1/2@tablet u-1/2@wide">
         <div class="handset">

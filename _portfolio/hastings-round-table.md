@@ -1,11 +1,12 @@
 ---
 title: Hastings Round Table
-layout: default
+page-class: portfolio
 date: '2016-10-11 11:17:17'
-excerpt: 'We were delighted to be asked to design and build a website for the Hastings
-  Division of the Round Table. The main goal of the website was to make it easier
-  for people to request funding for their projects as well as enhancing the overall
-  visibility of HRT on the web! '
+excerpt: "<p>We were delighted to be commissioned to design and build the website
+  for the Hastings Division of the Round Table.</p><p>One of the key goals of the
+  website was to make it easier for people to request funding for their projects as
+  well as enhancing the overall visibility of HRT on the web!</p><p>We delivered a
+  clean functional site with a blog and custom funding request form.</p>"
 categories:
 - portfolio
 tags:

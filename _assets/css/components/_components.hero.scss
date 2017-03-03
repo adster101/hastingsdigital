@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
 
+  @include mq($until: tablet) {
+    flex-direction: column;
+  }
+
+
 }
 
 .hero__image {
@@ -15,6 +20,11 @@
 }
 .hero__content {
 
+
+  @include mq($until: tablet) {
+    padding-top: $inuit-global-spacing-unit;
+    padding-bottom: $inuit-global-spacing-unit;
+  }
 
   @include mq($until: desktop) {
     padding: $inuit-global-spacing-unit;
@@ -40,11 +50,11 @@
   font-weight: 300;
   @include mq($until: desktop) {
     @include inuit-font-size(20px);
+    @include inuit-font-size(20px);
   }
 }
 
-.her__tagline {
+.hero__tagline {
   font-weight: 300;
   @include inuit-font-size(20px);
-
 }
