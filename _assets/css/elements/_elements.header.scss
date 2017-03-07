@@ -1,9 +1,8 @@
 // Header styles
 // Woot!
 
-.masthead {
+.header {
   position: relative;
-
 
   &::after {
     z-index:100;
@@ -21,8 +20,8 @@
   }
 }
 
-.masthead__inner {
-  @include inuit-clearfix();
+.header__outer-wrapper {
+
   padding: $inuit-global-spacing-unit-small 0;
   display: flex;
   flex-direction: column;
@@ -30,8 +29,30 @@
   @include mq($from: tablet) {
     flex-direction: row;
   }
+
 }
 
+.header__inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu, .email {
+  width: 24px;
+  height: 24px;
+
+  svg {
+    display:block;
+    width: 100%;
+    height: 100%;
+    fill: $color-gray-ui;
+  }
+  @include mq($from: tablet) {
+    display:none;
+  }
+}
 .page-header {
   background-color: $color-brand;
   padding-top: $inuit-global-spacing-unit;

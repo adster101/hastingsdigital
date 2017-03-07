@@ -1,18 +1,29 @@
 <!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<header class="masthead">
+<header class="header">
   <!-- Logo/Brand/Title -->
-  <div class="o-wrapper">
-    <div class="masthead__inner">
+  <div class="o-wrapper header__outer-wrapper">
+    <div class="header__inner-wrapper">
+      <a class="menu">
+        <svg class="icon">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+      </a>
       <a class="logo" href="/">
         <svg class="icon icon--small logo__image">
           <use xlink:href="#icon-embed2"></use>
         </svg>
-        <span class="">&nbsp;Hastings Digital</span>
+        <span>&nbsp;Hastings Digital</span>
       </a>
-      <!-- Navigation -->
-      <nav class="main-nav">
-        {% include nav.html %}
-      </nav>
+      <a class="email" href="/contact/">
+        <svg class="icon">
+          Menu
+          <use xlink:href="#icon-mail_outline"></use>
+        </svg>
+      </a>
     </div>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      {% include nav.html %}
+    </nav>
   </div>
 </header>

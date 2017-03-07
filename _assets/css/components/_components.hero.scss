@@ -1,22 +1,18 @@
 .hero {
-
   display: flex;
   align-items: center;
-
-  @include mq($until: tablet) {
-    flex-direction: column;
-  }
-
-
 }
 
 .hero__image {
-
+  @include mq($until: tablet) {
+    display: none;
+  }
   svg {
     fill: $color-white;
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
   }
+
 }
 .hero__content {
 
@@ -26,7 +22,7 @@
     padding-bottom: $inuit-global-spacing-unit;
   }
 
-  @include mq($until: desktop) {
+  @include mq($from: tablet) {
     padding: $inuit-global-spacing-unit;
   }
 
