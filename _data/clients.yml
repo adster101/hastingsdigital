@@ -1,8 +1,14 @@
-- name: Insider London
-  logo: images/logos/insider-london.png
-- name: Trade Paints
-  logo: images/logos/trade-paints-logo.svg
 - name: London Calling
   logo: images/logos/londoncalling-logo.svg
-- name: KCS
+- name: Insider London
+  logo: images/logos/insider-london.png
+- name: Hastings Round Table
+  logo: images/logos/roundtable-logo.png
+- name: Trade Paints
+  logo: images/logos/trade-paints-logo.svg
+- name: French Connections
+  logo: images/logos/logo-4.png
+- name: Kitchen Carpentry Specialists
   logo: images/logos/kcs.svg
+- name: Equilibre Holistic Therapy
+  logo: images/logos/equilibre-logo.png

@@ -6,6 +6,7 @@ excerpt: At Hastings Digital we provide a friendly website design and build serv
   via our base in Hastings, East Sussex. Our experience gives us the edge when it
   comes to building fast, functional and affordable websites. Get in touch today and
   let us know about your project!
+last_modified_at: '2017-03-08'
 ---
 
 <section class="dark-blue-bg">
@@ -17,7 +18,7 @@ excerpt: At Hastings Digital we provide a friendly website design and build serv
         </svg>
 				</div>
   <div class="hero__content ">
-    <h1 class="hero__title white">We <strong>design</strong> and <strong>build</strong> great looking, fast and accessible websites based in the lovely seaside town of Hastings, East Sussex.</h1>
+    <h1 class="hero__title white">We <strong>design and build</strong> great looking, fast and accessible websites based in the lovely seaside town of Hastings, East Sussex.</h1>
      <p class="u-margin-bottom-none lede white">
 		 <strong>Have a project in mind?</strong>
       <a class="c-btn c-btn--ghost c-btn--tertiary u-margin-left" href="/contact/">
@@ -51,16 +52,16 @@ excerpt: At Hastings Digital we provide a friendly website design and build serv
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">
-    <h2>Our work</h2>
-    <p>We work with companies large and small but whatever the size we like to establish long lasting relationships with the people we work with so we can offer the right guidance. See some of the companies we're proud to work with below.</p>
-    <div class="o-layout">
+    <h2>We work with...</h2>
+    <p class="u-3/4@desktop">...a range of companies large and small. Not only do we design fantastic looking websites but we also offer ongoing support and maintenance for agencies and companies. Read more about our work.</p>
+    <ul class="c-client-list">
       {% for member in site.data.clients %}
-        <div class="o-layout__item u-1/3@tablet u-1/3@desktop u-1/3@wide">
-          <div class="c-logo u-margin-bottom">
-            <img src="{{ member.logo }}" alt="{{ member.name}} logo" />
-          </div>
-        </div>
+        <li class="c-client-list__item">
+          <img class="c-client-list__logo" src="{{ member.logo }}" alt="" title="{{ member.name}}" />
+        </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </section>
+
+{% include testimonials.html %}

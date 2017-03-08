@@ -12,7 +12,7 @@
 
 .main-nav__link + .main-nav__link {
   @include mq($from: tablet) {
-    padding-left: $inuit-global-spacing-unit;
+    margin-left: $inuit-global-spacing-unit;
   }
 }
 .main-nav__link {

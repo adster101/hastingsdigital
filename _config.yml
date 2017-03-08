@@ -59,3 +59,4 @@ exclude:
 - Gemfile
 - Gemgile.lock
 - README.md
+- _config_prod.yml

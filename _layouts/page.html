@@ -1,20 +1,40 @@
 ---
 layout: default
 ---
-
-<section class="page-header">
-  <header class="o-wrapper">
-    <h1 class="u-h3 white" itemprop="name">
-      <strong>
-        {{ page.title | escape }}
-      </strong>
-    </h1>
-    <h2 class="u-h4 u-margin-bottom-none white">
-      {{ page.tagline | escape }}
-    </h2>
-  </header>
-</section>
-  <div class="o-wrapper" itemprop="articleBody">
-    {{ content }}
-  </div>
-{% include testimonials.html %}
+<article itemtype="http://schema.org/BlogPosting">
+  <section class="page-header">
+    <header class="o-wrapper">
+      <h1 class="u-h3 white" itemprop="name headline">
+        <strong>
+          {{ page.title | escape }}
+        </strong>
+      </h1>
+      <h2 class="u-h4 white">
+        {{ page.tagline | escape }}
+      </h2>
+      <span class="small white">
+        <time itemprop="datePublished">
+          {{ page.date | date: "%b %Y" }}
+        </time>
+        {% if page.author %}
+          &nbsp;|&nbsp;
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">
+              <strong>
+                {{ page.author }}
+              </strong>
+            </span>
+          </span>
+        {% endif %}
+    </span>
+    </header>
+  </section>
+  <section>
+    <div class="o-wrapper" itemprop="articleBody">
+      <div class="u-2/3@desktop">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+  {% include testimonials.html %}
+</article>
