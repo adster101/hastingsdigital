@@ -17,7 +17,12 @@
 RewriteEngine On
 
 # Rewrite some old urls 13/02/2017
+Redirect 301 "/work/contact-us" /
 Redirect 301 "/about-us" /about/
 Redirect 301 "/contact-us" /contact/
 Redirect 301 "/work/" /portfolio/
 Redirect 301 "/disclaimer" /
+
+# Redirect product pages to tours
+RewriteCond %{REQUEST_URI} ^/work/$
+RewriteRule ^work/(.*) /portfolio/$1 [R=301,L]

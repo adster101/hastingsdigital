@@ -1,6 +1,6 @@
 .main-nav {
 
-  display: none;
+  display:none;
   justify-content: space-between;
 
   @include mq($from: tablet) {
@@ -11,10 +11,19 @@
 }
 
 .main-nav__link + .main-nav__link {
+  padding-top: $inuit-global-spacing-unit-small;
+  padding-bottom: $inuit-global-spacing-unit-small;
+  border-top: 1px solid $color-gray-ui;
+  border-bottom: 0;
+
   @include mq($from: tablet) {
     margin-left: $inuit-global-spacing-unit;
+    border-bottom:3px solid transparent;
+    border-top: none;
+    padding-bottom: inherit;
   }
 }
+
 .main-nav__link {
   display: inline-block;
   text-decoration:none;
@@ -24,13 +33,15 @@
   font-weight: 400;
   margin-bottom: inherit;
   border-bottom:3px solid transparent;
-  transition: border 0.3s;
   flex-shrink: 0;
   display: flex;
 
   &:hover, &:active  {
     text-decoration: none;
-    border-bottom:3px solid $color-orange;
+    
+    @include mq($from: tablet) {
+      border-bottom:3px solid $color-orange;
+    }
   }
 
   &:hover, &:active {
@@ -40,7 +51,10 @@
 }
 
 .about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
-  text-decoration: none;
-  border-bottom:3px solid $color-orange;
   color: $color-orange;
+
+  @include mq($from: tablet) {
+    text-decoration: none;
+    border-bottom:3px solid $color-orange;
+  }
 }

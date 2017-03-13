@@ -17,7 +17,8 @@
   {% else %}
     {% css main %}
   {% endif %}
-   
+
+  {% js scripts async:true %}
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

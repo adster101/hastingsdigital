@@ -9,9 +9,11 @@ layout: default
           {{ page.title | escape }}
         </strong>
       </h1>
-      <h2 class="u-h4 white">
+      <h2 class="u-h4 white u-margin-bottom-none">
         {{ page.tagline | escape }}
       </h2>
+      {% if page.date %}
+      <p class="u-margin-top-small u-margin-bottom-none" />
       <span class="small white">
         <time itemprop="datePublished">
           {{ page.date | date: "%b %Y" }}
@@ -26,14 +28,14 @@ layout: default
             </span>
           </span>
         {% endif %}
+      </p>
+      {% endif %}
     </span>
     </header>
   </section>
   <section>
     <div class="o-wrapper" itemprop="articleBody">
-      <div class="u-2/3@desktop">
-        {{ content }}
-      </div>
+      {{ content }}
     </div>
   </section>
   {% include testimonials.html %}
