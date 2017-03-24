@@ -1,9 +1,9 @@
-- title: What we do
-  class: main-nav__link services
-  url: /services/
 - title: Who we are
   class: main-nav__link about
   url: /about/
+- title: What we do
+  class: main-nav__link services
+  url: /services/
 - title: Our work
   class: main-nav__link portfolio
   url: /portfolio/
