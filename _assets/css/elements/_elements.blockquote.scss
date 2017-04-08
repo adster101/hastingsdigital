@@ -8,5 +8,32 @@
     color: $color-black;
     text-align: center;
     margin:0;
-    
+
+  }
+  blockquote.testimonial {
+    font-weight: 400;
+    font-style: italic;
+    color: $color-black;
+    text-align: center;
+    margin: 0 auto;
+    padding: $inuit-global-spacing-unit-small;
+
+    @include mq(desktop) {
+      max-width: 60%;
+      padding: $inuit-global-spacing-unit;
+    }
+
+    @include mq(wide) {
+      max-width: 60%;
+      padding: $inuit-global-spacing-unit-large;
+      @include inuit-font-size(21px,2rem);
+    }
+
+
+    > footer {
+      background-color: inherit;
+      font-style: normal;
+      font-weight: bold;
+      color: $color-black;
+    }
   }
