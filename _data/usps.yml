@@ -1,14 +1,20 @@
 - icon: \#icon-mobile
-  title: Responsive Website Design
-  text: The mobile revolution will not be televised. Luckily, all the websites we build are fast, high-quality and mobile friendly ensuring that your website will always look great whether on a 60" plasma TV or a tiny smartphone.
+  title: Website Design
+  text: If you're looking for Web Design in Hastings, look no further! We offer a complete <a href="/services">web design and build service</a> for local businesses and individuals seeking to develop their web prescence. Our websites are clean, modern and work across all devices from the smallest smartphone to the largest plasma TVs. All our sites are bespoke and tailored to meet the needs of your project. 
   link: /services
-- icon: \#icon-rocket
-  title: Web Apps
-  text: More and more the line between a website site and an app is getting blurred. We keep pace with technology so we can offer the latest web apps at an affordable price.
-- icon: \#icon-cogs
-  title: Solution development
-  text: If you require more than a simple brochure site we offer bespoke development and backend design solutions that can get you idea off the ground.
+  anchortext: Find out more about our web design services
+- icon: \#icon-stats-dots
+  title: Search Engine Optimisation (SEO)
+  text: So you have a website, great but what's next? Getting your website found by your customers on search engines such as Google is a process known as Search Engine Optimisation. We craft all of our sites to ensure that they are easily found and indexed by all the major search engines. We also offer SEO consultancy to improve your overall visibility online so you can make the most of your website.
+  anchortext: Read more about our SEO services
   link: /services
-# - icon: \#icon-bubbles2
-#   title: Experienced
-#   text: We've worked with businesses large and small
+- icon: \#icon-stats-bars
+  title: Pay Per Click (PPC)
+  text: We offer Pay Per Click advertising services via the <a href="https://adwords.google.com/intl/en_uk/home/">Google Adwords platform</a>. Adwords is a good way to get your site on page one of Google with minimal fuss. You decide the keywords for which you want to appear and only pay when people click through to your site. This is a great way to get some traffic to your site for the short or medium term. 
+  anchortext: Let us help you set up a PPC campaign
+  link: /services
+- icon: \#icon-office
+  title: Agency Partnerships
+  link: /services
+  text: As well as working with local companies we offer consultancy services to Marketing and Design agencies in Sussex, the South East and London. We can offer support for a range of Content Management Systems from Craft to Joomla. We like to develop long term working relationships with all our clients.
+  anchortext: Got a project in mind?

@@ -1,12 +1,10 @@
 ---
-title: Web Design & Development | Hastings, East Sussex
+title: Web Design Hastings, East Sussex
 layout: default
 class: home
-excerpt: At Hastings Digital we provide a friendly website design and build servive
-  via our base in Hastings, East Sussex. Our experience gives us the edge when it
-  comes to building fast, functional and affordable websites. Get in touch today and
-  let us know about your project!
-last_modified_at: '2017-03-08'
+excerpt: We offer high quality web design in and around Hastings, East Sussex. We're
+  experts in responsive website design with a focus on quality and affordability.
+last_modified_at: '2017-03-28'
 ---
 
 <section class="dark-blue-bg">
@@ -18,7 +16,8 @@ last_modified_at: '2017-03-08'
         </svg>
 				</div>
   <div class="hero__content ">
-    <h1 class="hero__title white">We <strong>design and build</strong> great looking, fast and accessible websites based in the lovely seaside town of Hastings, East Sussex.</h1>
+	<h1 class="u-h2 hero__title white u-margin-bottom-none"><strong>Web design Hastings, East Sussex.</strong></h1>
+	<h2 class="u-h1 hero__title white">Here at Hastings Digital we <strong>design</strong> and <strong>build</strong> great looking, fast and afforable websites. Simple!</h2>
      <p class="u-margin-bottom-none lede white">
 		 <strong>Have a project in mind?</strong>
       <a class="c-btn c-btn--ghost c-btn--tertiary u-margin-left" href="/contact/">
@@ -31,17 +30,21 @@ last_modified_at: '2017-03-08'
 
 <section class="light-grey-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">
-    <div class="o-layout o-layout">
+    <div class="o-layout o-layout--huge">
       {% for usp in site.data.usps %}
       <div class="o-layout__item u-1/2@tablet u-1/2@desktop u-1/2@wide">
-        <div class="o-media u-margin-bottom">
-          <svg class="icon icon--large o-media__img">
+        <div class="o-media u-margin-bottom-large">
+         <svg class="icon icon--large o-media__img u-margin-top-tiny">
             <use xlink:href="{{ usp.icon }}"></use>
           </svg>
           <div class="o-media__body">
-            <h3>{{ usp.title }}</h3>
+            <h2>{{ usp.title }}</h2>
             <p>{{ usp.text }} </p>
-            <p><a class="c-btn c-btn--secondary c-btn--small" href="{{ usp.link }}">Learn more</a></p>
+            <p>
+						  <a class="c-btn c-btn--secondary c-btn--small" href="{{ usp.link }}">
+							{{ usp.anchortext }} &nbsp; <strong>&rarr;</strong>
+							</a>
+						</p>
           </div>
         </div>
       </div>
