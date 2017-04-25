@@ -3,13 +3,13 @@
       {% for link in site.data.footer-contact %}
           <a href="{{ link.href }}" class="{{ link.class }}">
             <svg class="icon icon--medium">
-              <use xlink:href="{{ link.icon }}"></use>
+              <use xlink:href="#{{ link.icon }}"></use>
             </svg>
-            {{ link.title }}
+            &nbsp;{{ link.title }}
           </a>
       {% endfor %}
   </div>
   <p class="small">
-    56 St Thomas's Road, Hastings, East Sussex. TN34 3LQ
+    {{ site.address }}
   </p>
 </footer>

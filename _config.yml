@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Hastings Digital
 email: your-email@domain.com
+address: 56 St Thomas's Road, Hastings, East Sussex. TN34 3LQ
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hastings.digital" # the base hostname & protocol for your site
@@ -42,7 +43,7 @@ assets:
       - "last 2 versions"
       - "IE > 9"
   compress:
-    css: false
+    css: true
 gems:
   - jekyll-feed
   - jekyll-assets
