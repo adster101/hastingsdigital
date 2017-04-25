@@ -42,11 +42,12 @@ assets:
       - "last 2 versions"
       - "IE > 9"
   compress:
-    css: true
+    css: false
 gems:
   - jekyll-feed
   - jekyll-assets
   - jekyll-sitemap
+  - jekyll-seo-tag
 exclude:
 - gruntfile.js
 - ".gitignore"

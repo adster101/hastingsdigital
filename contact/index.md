@@ -4,6 +4,7 @@ page-class: contact
 class: contact main-nav__link
 order: 5
 layout: page
+sitemap: false
 tagline: We'd love to hear from you!
 ---
 <p class="lede">

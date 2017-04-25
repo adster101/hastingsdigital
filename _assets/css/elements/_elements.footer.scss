@@ -1,31 +1,37 @@
-.site-footer {
+footer.footer {
 
-  h1,h2,h3,h4,h5,h6 {
-    color: $color-white;
-  }
-
+  text-align: center;
   color:$color-white;
-  border-top:3px solid $color-yellow;
-  background-color: $color-blue-dark;
+  background-color: $color-black;
   padding: $inuit-global-spacing-unit-small;
 
   @include mq($from: tablet) {
     padding: $inuit-global-spacing-unit;
   }
 
-  nav {
 
-    @include mq($until: tablet) {
-      margin-bottom: $inuit-global-spacing-unit-large;
-    }
-
-    a {
-      color:$color-white;
-      text-decoration: none;
-      display:block;
-    }
+  a {
+    color:$color-white;
+    text-decoration: none;
   }
+}
 
+.footer__contact {
+  display: flex;
+  flex-direction: column;
 
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+}
 
+.footer__contact-link {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: $inuit-global-spacing-unit;
+
+  @include mq($from: tablet) {
+    padding-bottom: 0;
+  }
 }

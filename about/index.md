@@ -7,7 +7,7 @@ order: 3
 page-class: about
 ---
 
-We pride ourselves on establishing long lasting working relationships with all our customers big or small. By getting to know you and your business over the long term we can provide tailored solutions to the most complex problems. 
+We pride ourselves on establishing long lasting working relationships with all our customers big or small. By getting to know you and your business over the long term we can provide tailored solutions to the most complex problems.
 
 Hastings Digital is a small but perfectly formed web design and development agency owned and run by Adam Rifat in the heart of Hastings, East Sussex.
 

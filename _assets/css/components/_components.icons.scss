@@ -3,15 +3,26 @@
  * 1. Parent item needs to be position: relative for this to work
  */
 .icon {
-  fill: $color-white;
   vertical-align: text-bottom;
   display: inline-block;
 }
 
+svg {
+  display:block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
 .icon--small {
+  width: 1em;
+  height: 1em;
+}
+
+.icon--medium {
   width: 2em;
   height: 2em;
-  fill: $color-black;
+
 }
 
 .icon--large {

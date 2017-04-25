@@ -1,0 +1,10 @@
+article {
+  p {
+    @include mq($from: tablet) {
+      max-width: 80%;
+    }
+    @include mq($from: desktop) {
+      max-width: 60%;
+    }
+  }
+}

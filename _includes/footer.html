@@ -1,34 +1,15 @@
-<footer class="site-footer">
-  <div class="o-wrapper u-padding-bottom">
-    <div class="o-layout">
-      {% for sections in site.data.footer %}
-        <div class="o-layout__item u-1/4@tablet u-1/4@desktop">
-          {% assign section = sections[1] %}
-            <header>
-              <h5 class="u-margin-bottom-small">
-                {{ section.header }}
-              </h5>
-            </header>
-            <nav>
-              {% for link in section.links %}
-                <a href="{{ link.href }}">{{ link.title }}</a>
-              {% endfor %}
-            </nav>
-        </div>
+<footer class="footer">
+  <div class="o-wrapper u-padding-bottom footer__contact">
+      {% for link in site.data.footer-contact %}
+          <a href="{{ link.href }}" class="{{ link.class }}">
+            <svg class="icon icon--medium">
+              <use xlink:href="{{ link.icon }}"></use>
+            </svg>
+            {{ link.title }}
+          </a>
       {% endfor %}
-    </div>
   </div>
+  <p class="small">
+    56 St Thomas's Road, Hastings, East Sussex. TN34 3LQ
+  </p>
 </footer>
-
-{% if jekyll.environment == "production" %}
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90123525-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-{% endif %}

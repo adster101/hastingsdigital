@@ -1,12 +1,28 @@
 
-
-  blockquote.testimonial  {
+  blockquote.testimonial {
     font-weight: 400;
-    @include inuit-font-size(24px);
-    font-style: italic;
-    padding: $inuit-global-spacing-unit-huge;
     color: $color-black;
     text-align: center;
-    margin:0;
-    
+    font-style: italic;
+    margin: 0 auto;
+    padding: $inuit-global-spacing-unit;
+
+    @include mq($from: tablet) {
+      max-width: 60%;
+      @include inuit-font-size(21px,2rem);
+    }
+
+    @include mq($from: desktop) {
+      padding: $inuit-global-spacing-unit-large;
+    }
+
+
+    > footer {
+      background-color: inherit;
+      color: $color-black;
+      font-weight: bold;
+    }
+    cite {
+      font-style: normal;
+    }
   }

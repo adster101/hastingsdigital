@@ -11,10 +11,8 @@ tagline: We offer a comprehensive website design and build service complemented 
 
 ### Web and email hosting
 
-### Joomla 
+### Joomla
 
 ### ExpressionEngine
 
 ### Agency partnerships
-
-
