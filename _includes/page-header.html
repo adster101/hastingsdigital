@@ -1,0 +1,31 @@
+<div class="page-header">
+  <header class="o-wrapper">
+    <h1 class="u-h3 white" itemprop="name headline">
+      <strong>
+        {{ page.title | escape }}
+      </strong>
+    </h1>
+    <h2 class="u-h4 white u-margin-bottom-none u-4/5@tablet u-3/5@desktop">
+      {{ page.tagline | escape }}
+    </h2>
+    {% if page.date %}
+    <p class="u-margin-top-small u-margin-bottom-none" />
+    <span class="small white">
+      <time itemprop="datePublished">
+        {{ page.date | date: "%d %b %Y" }}
+      </time>
+      {% if page.author %}
+        &nbsp;|&nbsp;
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">
+            <strong>
+              {{ page.author }}
+            </strong>
+          </span>
+        </span>
+      {% endif %}
+    </p>
+    {% endif %}
+  </span>
+  </header>
+</div>

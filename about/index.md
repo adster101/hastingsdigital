@@ -1,26 +1,26 @@
 ---
-title: About
+title: About Hastings Digital
 layout: page
 class: main-nav__link about
-date: '2016-10-11 08:53:28'
 order: 3
 page-class: about
+author: Adam Rifat
 ---
 
-We pride ourselves on establishing long lasting working relationships with all our customers big or small. By getting to know you and your business over the long term we can provide tailored solutions to the most complex problems.
+Hastings Digital is a website design and development agency providing a broad range of digital services to small and medium sized businesses and individuals in Hastings and the surrounding areas.
 
-Hastings Digital is a small but perfectly formed web design and development agency owned and run by Adam Rifat in the heart of Hastings, East Sussex.
+We're a small team which means we can work one to one with you ensuring that we deliver exactly what you need. We like to keep things as simple as possible which means a focus on what matters to you. Our work is precise, clean, clear and fast which is a key consideration in todays multi device world.  
 
-We have over eight years of experience working in the web and IT sector and we provide a full range of services from email and website hosting, website design through to bespoke development work and performance optimisation so whether you need an email address or if you already have a website which needs optimising we can help.
+Whether you already have an established website which needs enhancing or whether you're looking to build a new website from scratch then we can help.
 
-##### Affordable
+### Value for money
 
-We are able to offer affordable and competitive rates because we don't have large offices or lot's of full time staff members. Because we have low overheads we can pass these savings onto our clients while still providing an excellent and personalised service.
+Our websites typically start from around £525 which includes everything you need to get up and running.
 
-##### Local
+Typically includes the website itself, a Content Management System (CMS) so that you can update the site yourself, a personalised email address and hosting on a reliable and secure web server.
 
-We pride ourselves in supporting local businesses providing advice and bespoke services tailored to the exact needs of our clients. We pride ourselves in supporting local businesses providing advice and bespoke services tailored to the exact needs of our clients.
+We provide a range of additional services such as [Search Engine Optimisation](http://hastings.digital/serices)  which we offer either on a daily or hourly rate.
 
-##### Agency work
+### Bespoke
 
-We appreciate that  things can get busy at times. Sometimes too busy! As well as working with companies small and large locally we are also perfectly placed to offer support for busy agencies to fulfil urgent deadlines and ensure your clients are kept happy.
+We don't use a 'cookie cutter' approach to our sites where your site looks the same as the last one we produced. All our site are designed and built from the ground up using the most up to date techniques. If you already have an existing brand identity we will use that as a basis for a new design so that your brand reputation is carried forward.

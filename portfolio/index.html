@@ -2,10 +2,13 @@
 title: Our work
 tagline: We don't just design and build websites. We also offer custom development
   and ongoing maintenance for existing sites. Check out some of of our work below.
-layout: page
+layout: default
 page-class: portfolio
 permalink: "/portfolio/"
 ---
+
+    {% include page-header.html %}
+    <div class="o-wrapper">
 
 {% assign posts = site.portfolio | where: "categories", "portfolio" %}
 
@@ -16,7 +19,6 @@ permalink: "/portfolio/"
 					<header class="work__header">
 							<h2 class="u-margin-bottom-none">{{ post.title }}</h2>
 							<time class="u-margin-bottom-small">{{ post.date | date: "%b %Y" }}</time>
-
 					</header>
 
           {{ post.excerpt }}
@@ -34,3 +36,7 @@ permalink: "/portfolio/"
     </div>
   </section>
 {% endfor %}
+</div>
+
+
+{% include testimonials.html %}

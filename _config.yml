@@ -19,8 +19,12 @@ address: 56 St Thomas's Road, Hastings, East Sussex. TN34 3LQ
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hastings.digital" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+social:
+  name: Hastings Digital
+  links:
+    - https://twitter.com/hastingsdigital
+lang: en_GB
 
 collections:
   portfolio:

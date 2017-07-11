@@ -44,13 +44,30 @@
 
 .hero__title {
   font-weight: 300;
-  @include mq($until: desktop) {
-    @include inuit-font-size(20px);
-    @include inuit-font-size(20px);
+
+  @include inuit-font-size($inuit-font-size-h4, $important: true);
+
+  @include mq($from: tablet) {
+    @include inuit-font-size($inuit-font-size-h3, $important: true);
+  }
+
+  @include mq($from: desktop) {
+    @include inuit-font-size($inuit-font-size-h2, $important: true);
   }
 }
 
 .hero__tagline {
   font-weight: 300;
-  @include inuit-font-size(20px);
+
+  @include inuit-font-size($inuit-font-size-h3, $important: true);
+
+  @include mq($from: tablet) {
+    @include inuit-font-size($inuit-font-size-h2, $important: true);
+  }
+
+  @include mq($from: desktop) {
+    @include inuit-font-size($inuit-font-size-h1, $important: true);
+  }
+
+
 }
