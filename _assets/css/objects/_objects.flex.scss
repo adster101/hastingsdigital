@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: column;
+
+  @include mq ($from: tablet) {
+    flex-direction: row;
+  }
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.row-reverse {
+  flex-direction: column;
+  @include mq ($from: tablet) {
+    flex-direction: row-reverse;
+  }
+}

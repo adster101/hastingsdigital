@@ -143,6 +143,7 @@ $mq-breakpoints: (
 @import "../../bower_components/inuitcss/objects/objects.list-bare";
 
 @import "objects/_objects.list-inline";
+
 @import "../../bower_components/inuitcss/objects/objects.list-inline";
 //@import "../../bower_components/inuitcss/objects/objects.box";
 @import "../../bower_components/inuitcss/objects/objects.block";
@@ -151,6 +152,7 @@ $mq-breakpoints: (
 //@import "../../bower_components/inuitcss/objects/objects.tables";
 //@import "../../bower_components/inuitcss/objects/objects.pack";
 
+@import "objects/_objects.flex";
 
 
 
@@ -165,6 +167,7 @@ $mq-breakpoints: (
 @import "components/_components.buttons";
 @import "components/_components.handset";
 @import "components/_components.logos";
+
 
 
 

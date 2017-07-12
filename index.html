@@ -29,28 +29,27 @@ last_modified_at: '2017-03-28'
 </section>
 
 <section class="light-grey-bg u-padding-top-large u-padding-bottom-large">
-  <div class="o-wrapper">
-    <div class="o-layout o-layout--huge">
       {% for usp in site.data.usps %}
-      <div class="o-layout__item u-1/2@tablet u-1/2@desktop u-1/2@wide">
-        <div class="o-media u-margin-bottom-large">
-         <svg class="icon icon--large o-media__img u-margin-top-tiny">
-            <use xlink:href="{{ usp.icon }}"></use>
-          </svg>
-          <div class="o-media__body">
+      <div class="{{ usp.layout }}">
+      <div class="u-1/2@tablet">
+        <picture>
+          <source srcset="http://via.placeholder.com/960x480" media="(min-width: 1300px)" >
+          <source srcset="http://via.placeholder.com/840x480" media="(min-width: 980px)" >
+          <source srcset="http://via.placeholder.com/480x480" media="(min-width: 640px)" >
+          <img src="http://via.placeholder.com/640x240" />
+        </picture>
+        </div>
+          <div class="u-1/2@tablet u-padding-left u-padding-right">
             <h2>{{ usp.title }}</h2>
             <p>{{ usp.text }} </p>
-            <p>
+            <!-- <p>
 						  <a class="c-btn c-btn--secondary c-btn--small" href="{{ usp.link }}">
 							{{ usp.anchortext }} &nbsp; <strong>&rarr;</strong>
 							</a>
-						</p>
+						</p> -->
           </div>
         </div>
-      </div>
       {% endfor %}
-    </div>
-  </div>
 </section>
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
