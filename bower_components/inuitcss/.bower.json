@@ -1,6 +1,6 @@
 {
   "name": "inuitcss",
-  "version": "6.0.0-beta.4",
+  "version": "6.0.0-beta.5",
   "homepage": "https://github.com/inuitcss/inuitcss",
   "authors": [
     "Harry Roberts <csswizardry@gmail.com>"
@@ -30,14 +30,13 @@
   "dependencies": {
     "sass-mq": "^3.2.9"
   },
-  "_release": "6.0.0-beta.4",
+  "_release": "6.0.0-beta.5",
   "_resolution": {
     "type": "version",
-    "tag": "6.0.0-beta.4",
-    "commit": "126bebe2ff2146b7101ef28fb1b2c0c4832261dc"
+    "tag": "6.0.0-beta.5",
+    "commit": "d84cb4762c945714f4440af6a3db48bce85a4cf6"
   },
   "_source": "https://github.com/inuitcss/inuitcss.git",
   "_target": "^6.0.0-beta.4",
-  "_originalSource": "inuitcss",
-  "_direct": true
+  "_originalSource": "inuitcss"
 }

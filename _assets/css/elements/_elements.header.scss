@@ -64,3 +64,35 @@
   }
 
 }
+
+.main-heading {
+  @include mq($from: desktop){
+    padding: $inuit-global-spacing-unit-large $inuit-global-spacing-unit-huge;
+  }
+  text-align: center;
+
+
+
+}
+
+.content {
+  min-width: 300px;
+  margin: 0 auto;
+
+  @include mq($from: phablet) {
+    width: 440px;
+  }
+  @include mq($from: tablet) {
+    width: 720px;
+  }
+  @include mq($from: desktop) {
+    width: 960px;
+  }
+
+}
+
+.main-heading-container {
+  @include mq($from: desktop){
+    padding: $inuit-global-spacing-unit-large 0;
+  }
+}

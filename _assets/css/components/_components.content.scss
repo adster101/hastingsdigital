@@ -1,0 +1,29 @@
+.content {
+  padding: $inuit-global-spacing-unit;
+  zoom: 1;
+}
+
+#usps section {
+  position: relative;
+
+}
+
+#web-design {
+  padding-top: 240px;
+
+  &:after {
+    -webkit-background-size: 240px 193px;
+    background-size: 240px 193px;
+    background-color: #fa7100;
+    background-image: url(https://www.mozilla.org/media/img/mozorg/technology/context-graph.b8e67f13a57d.svg);
+    background-position: top 20px center;
+    background-repeat: no-repeat;
+    content: '';
+    height: 233px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}

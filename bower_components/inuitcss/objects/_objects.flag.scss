@@ -12,11 +12,13 @@
  * 1. Allows us to control vertical alignments.
  * 2. Force the object to be the full width of its parent. Combined with [1],
  *    this makes the object behave in a quasi-`display: block;` manner.
+ * 3. Reset inherited `border-spacing` declarations.
  */
 
 .o-flag {
   display: table; /* [1] */
   width: 100%; /* [2] */
+  border-spacing: 0; /* [3] */
 }
 
 
@@ -79,6 +81,16 @@
 /* Size variants.
    ========================================================================== */
 
+.o-flag--flush {
+
+  > .o-flag__img {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+}
+
+
 .o-flag--tiny {
 
   > .o-flag__img {
@@ -95,6 +107,7 @@
   }
 
 }
+
 
 .o-flag--small {
 
@@ -113,6 +126,7 @@
 
 }
 
+
 .o-flag--large {
 
   > .o-flag__img {
@@ -130,6 +144,7 @@
 
 }
 
+
 .o-flag--huge {
 
   > .o-flag__img {
@@ -146,16 +161,6 @@
   }
 
 }
-
-.o-flag--flush {
-
-  > .o-flag__img {
-    padding-right: 0;
-    padding-left:  0;
-  }
-
-}
-
 
 
 
@@ -203,6 +208,7 @@
   }
 
 }
+
 
 .o-flag--bottom {
 

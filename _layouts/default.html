@@ -8,10 +8,10 @@ layout: compress
   <body class="no-js {{ page.page-class }}">
     {% include symbols/symbol-defs.svg %}
     {% include header.html %}
-    
-    <main class="" aria-label="Content">
+    <main class="" aria-label="Content" role="main">
         {{ content }}
     </main>
+    {% include cta/get-a-quote.html %}
     {% include footer.html %}
   </body>
 </html>

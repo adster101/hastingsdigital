@@ -6,51 +6,35 @@ excerpt: We offer high quality web design in and around Hastings, East Sussex. W
   experts in responsive website design with a focus on quality and affordability.
 last_modified_at: '2017-03-28'
 ---
-
-<section class="dark-blue-bg">
-	<div class="o-wrapper">
-		<div class="hero">
-			<div class="hero__image">
-        <svg class="icon">
-          <use xlink:href="#icon-embed2"></use>
-        </svg>
-				</div>
-  <div class="hero__content ">
-	<h1 class="hero__title white u-margin-bottom-none"><strong>Web design Hastings, East Sussex.</strong></h1>
-	<h2 class="hero__tagline white">Hastings Digital <strong>design</strong> and <strong>build</strong> great looking, fast and afforable websites. Simple!</h2>
-     <p class="u-margin-bottom-none lede white">
-		 <strong>Have a project in mind?</strong>
-      <a class="c-btn c-btn--ghost c-btn--tertiary u-margin-left" href="/contact/">
-        Get in touch!
-      </a>
-    </p>
+<div class="dark-blue-bg main-heading-container">
+  <div class="content">
+    <header class="main-heading">
+    	<h1 class="white u-margin-bottom-none"><strong>Web design Hastings, East Sussex.</strong></h1>
+    	<p class="white">
+        Hastings Digital <strong>design</strong> and <strong>build</strong> great looking, fast and afforable websites. Simple!
+      </p>
+    </header>
   </div>
-	</div>
-</section>
+</div>
 
-<section class="light-grey-bg u-padding-top-large u-padding-bottom-large">
-      {% for usp in site.data.usps %}
-      <div class="{{ usp.layout }}">
-      <div class="u-1/2@tablet">
-        <picture>
-          <source srcset="http://via.placeholder.com/960x480" media="(min-width: 1300px)" >
-          <source srcset="http://via.placeholder.com/840x480" media="(min-width: 980px)" >
-          <source srcset="http://via.placeholder.com/480x480" media="(min-width: 640px)" >
-          <img src="http://via.placeholder.com/640x240" />
-        </picture>
-        </div>
-          <div class="u-1/2@tablet u-padding-left u-padding-right">
-            <h2>{{ usp.title }}</h2>
-            <p>{{ usp.text }} </p>
-            <!-- <p>
-						  <a class="c-btn c-btn--secondary c-btn--small" href="{{ usp.link }}">
-							{{ usp.anchortext }} &nbsp; <strong>&rarr;</strong>
-							</a>
-						</p> -->
-          </div>
-        </div>
-      {% endfor %}
-</section>
+<div id="usps">
+{% for usp in site.data.usps %}
+  <section class="light-grey-bg " id="{{ usp.id }}">
+  {% assign loopindex = forloop.index | modulo: 2 %}
+    <div class="content {% if loopindex == 1 %}row{% else %}row-reverse{% endif %} flex-align-center">
+      <div class="inner-container">
+        <h2>{{ usp.heading }}</h2>
+        <p>{{ usp.text }} </p>
+        <p class="u-margin-bottom-none">
+    		  <a title="{{ url.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
+    			  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
+    			</a>
+    		</p>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+</div>
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">
