@@ -2,24 +2,17 @@
   font-family: 'Open Sans', sans-serif;
   display:none;
   justify-content: space-between;
+  align-items: center;
+  margin-left: $inuit-global-spacing-unit-large;
 
   @include mq($from: tablet) {
     display: flex;
-    justify-content: flex-end;
-    flex-grow:1;
   }
 }
 
 .main-nav__link + .main-nav__link {
-  padding-top: $inuit-global-spacing-unit-small;
-  padding-bottom: $inuit-global-spacing-unit-small;
-  border-top: 1px solid $color-gray-ui;
-  border-bottom: 0;
   @include mq($from: tablet) {
     margin-left: $inuit-global-spacing-unit;
-    border-bottom:3px solid transparent;
-    border-top: none;
-    padding-bottom: inherit;
   }
 }
 
@@ -27,22 +20,11 @@
   @include inuit-font-size(16px);
   display: inline-block;
   text-decoration:none;
-  padding-top: $inuit-global-spacing-unit-small;
-  padding-bottom: 9px;
   color: $color-gray;
   font-weight: 700;
   margin-bottom: inherit;
-  border-bottom:3px solid transparent;
   flex-shrink: 0;
   display: flex;
-
-  &:hover, &:active  {
-    text-decoration: none;
-
-    @include mq($from: tablet) {
-      border-bottom:3px solid $color-orange;
-    }
-  }
 
   &:hover, &:active {
     text-decoration: none;

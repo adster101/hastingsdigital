@@ -19,13 +19,16 @@
 .c-btn {
   display: inline-block; /* [1] */
   vertical-align: middle; /* [2] */
-  font: inherit; /* [3] */
+  /* font: inherit;  [3] */
   text-align: center; /* [4] */
   margin: 0; /* [4] */
   cursor: pointer; /* [5] */
-  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
   transition: $global-transition;
   border-radius: $global-radius;
+  font-family: "Open Sans", sans-serif;
+  @include inuit-font-size(16px);
+  font-weight: 700;
 }
 
 

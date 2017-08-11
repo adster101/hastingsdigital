@@ -1,12 +1,12 @@
-- title: Who we are
+- title: About
   class: main-nav__link about
   url: /about/
-- title: What we do
+- title: Services
   class: main-nav__link services
   url: /services/
-- title: Our work
+- title: Portfolio
   class: main-nav__link portfolio
   url: /portfolio/
-- title: Contact
-  class: main-nav__link contact
-  url: /contact/
+- title: Blog
+  class: main-nav__link portfolio
+  url: /blog/

@@ -27,6 +27,7 @@
   flex-direction: column;
 
   @include mq($from: tablet) {
+    padding: $inuit-global-spacing-unit 0;
     flex-direction: row;
   }
 
@@ -53,6 +54,14 @@
     display:none;
   }
 }
+
+.header__call-to-action {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .page-header {
   background-color: $color-brand;
   padding-top: $inuit-global-spacing-unit;
