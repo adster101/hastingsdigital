@@ -8,5 +8,5 @@
   class: main-nav__link portfolio
   url: /portfolio/
 - title: Blog
-  class: main-nav__link portfolio
+  class: main-nav__link blog
   url: /blog/

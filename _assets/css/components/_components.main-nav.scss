@@ -3,28 +3,35 @@
   display:none;
   justify-content: space-between;
   align-items: center;
-  margin-left: $inuit-global-spacing-unit-large;
-
+  flex-direction: column;
   @include mq($from: tablet) {
     display: flex;
+    margin-left: $inuit-global-spacing-unit-large;
+    flex-direction: row;
   }
 }
 
 .main-nav__link + .main-nav__link {
+  border-top: solid 1px $color-gray;
+
   @include mq($from: tablet) {
     margin-left: $inuit-global-spacing-unit;
+    border-top:none;
   }
 }
 
 .main-nav__link {
-  @include inuit-font-size(16px);
-  display: inline-block;
+  @include inuit-font-size(16px, 4);
+  display: block;
+  transition: color 0.2s;
+  @include mq($from: tablet) {
+    display: inline-block;
+
+  }
+
   text-decoration:none;
   color: $color-gray;
-  font-weight: 700;
   margin-bottom: inherit;
-  flex-shrink: 0;
-  display: flex;
 
   &:hover, &:active {
     text-decoration: none;
@@ -32,11 +39,6 @@
   }
 }
 
-.about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
+.blog nav .blog, .about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
   color: $color-orange;
-
-  @include mq($from: tablet) {
-    text-decoration: none;
-    border-bottom:3px solid $color-orange;
-  }
 }

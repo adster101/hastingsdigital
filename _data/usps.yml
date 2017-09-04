@@ -1,11 +1,10 @@
-- image:
+- image: /images/context-graph.b8e67f13a57d.svg
   alt:
   heading: Web Design
-  text: We offer a complete <a href="/services">web design</a> and build service for anyone wishing to develop their prescence online.<br/><br/>Our websites are clean, modern and work across all devices from the smallest smartphone to the largest plasma TVs.
+  text: <p>We offer a complete <a href="/services">web design</a> and build service for anyone wishing to develop their prescence online. Our websites are clean, modern and work across all devices from the smallest smartphone to the largest plasma TVs.</p>
   url: /services
   url-label: Learn more
   url-title: Learn more about Hastings Digital's web design service
-  id: web-design
 - image:
   alt:
   heading: Search Engine Optimisation

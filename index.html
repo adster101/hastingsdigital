@@ -19,24 +19,27 @@ last_modified_at: '2017-03-28'
   </div>
 </div>
 
-<div id="usps">
+<section class=" light-grey-bg">
 {% for usp in site.data.usps %}
-  <section class="light-grey-bg " id="{{ usp.id }}">
+  <div class="hero o-wrapper u-padding-top u-padding-bottom">
   {% assign loopindex = forloop.index | modulo: 2 %}
-    <div class="content {% if loopindex == 1 %}row{% else %}row-reverse{% endif %} flex-align-center">
+    <div class="hero__content u-1/2@tablet {% if loopindex == 1 %}row{% else %}row-reverse{% endif %}">
       <div class="inner-container">
         <h2>{{ usp.heading }}</h2>
         <p>{{ usp.text }} </p>
         <p class="u-margin-bottom-none">
-    		  <a title="{{ url.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
+    		  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
     			  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
     			</a>
     		</p>
       </div>
     </div>
-  </section>
+    <div class="hero__image u-1/2@tablet">
+      <img src="{{ usp.image }}" />
+    </div>
+  </div>
 {% endfor %}
-</div>
+</section>
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">

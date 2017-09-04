@@ -7,3 +7,15 @@
 .right {
   text-align: right;
 }
+
+.u-hidden-tablet-up {
+  @include mq($from:tablet){
+    display:none;
+  }
+}
+
+.u-hidden-mobile {
+  @include mq($until: tablet) {
+    display:none;
+  }
+}
