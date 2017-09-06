@@ -13,13 +13,9 @@
   {% seo %}
 
 
-  {% if jekyll.environment == "production" %}
-    <style>
-      {% include css/main.css %}
-    </style>
-  {% else %}
-    {% css main %}
-  {% endif %}
+  <style>
+    {% include css/main.css %}
+  </style>
 
   {% js scripts async:true %}
 

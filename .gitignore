@@ -4,3 +4,4 @@ _site
 .asset-cache
 node_modules
 bower_components
+assets

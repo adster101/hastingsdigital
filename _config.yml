@@ -66,3 +66,6 @@ exclude:
 - Gemgile.lock
 - README.md
 - _config_prod.yml
+- gulpfile.js
+- package.json
+- _assets
