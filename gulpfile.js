@@ -93,7 +93,32 @@ gulp.task('build', function(callback) {
 // Default Task: builds site.
 gulp.task('default', ['build']);
 
+// Special tasks for building and then reloading BrowserSync.
+gulp.task('build:jekyll:watch', ['build:jekyll'], function(callback) {
+    browserSync.reload();
+    callback();
+});
+
 // Serves site and watches files...
 gulp.task('serve', ['build'], function() {
 
-})
+  browserSync.init({
+      server: paths.siteDir,
+      ghostMode: false, // Toggle to mirror clicks, reloads etc. (performance)
+      logFileChanges: true,
+      logLevel: 'debug',
+      open: true        // Toggle to automatically open page when starting.
+  });
+
+  // Watch site settings.
+  gulp.watch(['_config.yml'], ['build:jekyll:watch']);
+
+  // Watch .scss files; changes are piped to browserSync.
+  gulp.watch('_assets/css/**/*.scss', ['build:styles']);
+
+  // Watch html and markdown files.
+  gulp.watch(['**/*.html', '!_site/**/*.*'], ['build:jekyll:watch']);
+
+
+
+});
