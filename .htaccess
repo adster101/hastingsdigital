@@ -26,3 +26,7 @@ Redirect 301 "/disclaimer" /
 # Redirect product pages to tours
 RewriteCond %{REQUEST_URI} ^/work/$
 RewriteRule ^work/(.*) /portfolio/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^hastings\.digital$
+RewriteRule ^(.*)$ https://hastings.digital/$1 [R=301,L]
