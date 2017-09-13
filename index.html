@@ -9,21 +9,25 @@ last_modified_at: '2017-03-28'
 <div class="dark-blue-bg main-heading-container">
   <div class="content">
     <header class="main-heading">
-    	<h1 class="white u-margin-bottom-none">
-        We <strong>design</strong> and <strong>build</strong> great looking websites. Simple!
-      </h1>
-    	<p class="white">
+      <h1 class="u-h5 white">
         <strong>Web design Hastings, East Sussex.</strong>
+      </h1>
+    	<h1 class="white">
+        Hastings Digital <strong>design</strong> and <strong>build</strong> great looking, fast and affordable websites. Simple!
+      </h1>
+      <p class="center">
+        <a class="c-btn c-btn--ghost white">Get in touch</a>
+        <a class="c-btn c-btn--ghost white">About us</a>
       </p>
     </header>
   </div>
 </div>
 
-<section class=" light-grey-bg">
 {% for usp in site.data.usps %}
-  <div class="hero o-wrapper u-padding-top u-padding-bottom">
+<section class="u-margin-bottom light-grey-bg"{% if usp.id %}id="{{ usp.id }}"{% endif %}>
+  <div class="hero o-wrapper u-padding-top u-padding-bottom {% if loopindex == 1 %}{% else %}hero--reverse{% endif %}">
   {% assign loopindex = forloop.index | modulo: 2 %}
-    <div class="hero__content u-1/2@tablet {% if loopindex == 1 %}row{% else %}row-reverse{% endif %}">
+    <div class="hero__content u-1/2@tablet">
       <div class="inner-container">
         <h2>{{ usp.heading }}</h2>
         <p>{{ usp.text }} </p>
@@ -34,12 +38,14 @@ last_modified_at: '2017-03-28'
     		</p>
       </div>
     </div>
-    <div class="hero__image u-1/2@tablet">
-      <img src="{{ usp.image }}" />
+    <div class="hero__image center u-1/2@tablet">
+      <svg class="icon">
+        <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
+      </svg>
     </div>
   </div>
-{% endfor %}
 </section>
+{% endfor %}
 
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">

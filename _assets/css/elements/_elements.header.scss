@@ -88,10 +88,6 @@
 
 .main-heading-container {
 
-  @include mq($from: desktop){
-    padding: $inuit-global-spacing-unit-large 0;
-  }
-
   .content {
     min-width: 300px;
     margin: 0 auto;

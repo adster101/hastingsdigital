@@ -8,7 +8,11 @@
     flex-direction: row;
   }
 }
-
+.hero--reverse {
+  @include mq($from: tablet) {
+    flex-direction: row-reverse;
+  }
+}
 .hero__image {
   flex-grow: 0;
 }
