@@ -23,42 +23,44 @@ last_modified_at: '2017-03-28'
   </div>
 </div>
 
-{% for usp in site.data.usps %}
-<section class="u-margin-bottom light-grey-bg"{% if usp.id %}id="{{ usp.id }}"{% endif %}>
-  <div class="hero o-wrapper u-padding-top u-padding-bottom {% if loopindex == 1 %}{% else %}hero--reverse{% endif %}">
-  {% assign loopindex = forloop.index | modulo: 2 %}
-    <div class="hero__content u-1/2@tablet">
-      <div class="inner-container">
-        <h2>{{ usp.heading }}</h2>
-        <p>{{ usp.text }} </p>
-        <p class="u-margin-bottom-none">
-    		  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
-    			  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
-    			</a>
-    		</p>
-      </div>
-    </div>
-    <div class="hero__image center u-1/2@tablet">
-      <svg class="icon">
-        <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
-      </svg>
-    </div>
-  </div>
-</section>
-{% endfor %}
-
 <section class="white-bg u-padding-top-large u-padding-bottom-large">
   <div class="o-wrapper">
-    <h2>We work with...</h2>
-    <p class="u-3/4@desktop">...a range of companies large and small. Not only do we design fantastic looking websites but we also offer ongoing support and maintenance for agencies and companies. Read more about our work.</p>
+    <h2>Our work</h2>
+    <p>We work with companies large and small local and national. Not only do we design great looking websites but we also offer consultancy services in a range of areas such as Search Engine Optimisation (SEO) and Pay Per Click marketing (PPC).</p>
     <ul class="c-client-list">
       {% for member in site.data.clients %}
-        <li class="c-client-list__item">
-          <img class="c-client-list__logo" src="{{ member.logo }}" alt="" title="{{ member.name}}" />
-        </li>
+      <li class="c-client-list__item">
+        <img class="c-client-list__logo" src="{{ member.logo }}" alt="" title="{{ member.name}}" />
+      </li>
       {% endfor %}
     </ul>
   </div>
 </section>
+
+{% for usp in site.data.usps %}
+  <section class="u-margin-bottom light-grey-bg"{% if usp.id %}id="{{ usp.id }}"{% endif %}>
+    <div class="hero o-wrapper u-padding-top u-padding-bottom {% if loopindex == 1 %}{% else %}hero--reverse{% endif %}">
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      <div class="hero__content u-1/2@tablet">
+        <div class="inner-container">
+          <h2>{{ usp.heading }}</h2>
+          <p>{{ usp.text }} </p>
+          <p class="u-margin-bottom-none">
+      		  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
+      			  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
+      			</a>
+      		</p>
+        </div>
+      </div>
+      <div class="hero__image center u-1/2@tablet">
+        <svg class="icon">
+          <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
+        </svg>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+
+{% include cta/get-a-quote.html %}
 
 {% include testimonials.html %}
