@@ -109,7 +109,7 @@ $mq-breakpoints: (
 @import "../../bower_components/inuitcss/generic/generic.normalize";
 @import "../../bower_components/inuitcss/generic/generic.reset";
 @import "../../bower_components/inuitcss/generic/generic.shared";
-@import "generic/generic.page";
+
 @import "generic/generic.backgrounds";
 @import "generic/generic.text-colours";
 
@@ -122,7 +122,6 @@ $mq-breakpoints: (
 @import "../../bower_components/inuitcss/elements/elements.images";
 
 @import "../../bower_components/inuitcss/elements/elements.page";
-@import "elements/_elements.body";
 @import "elements/_elements.header";
 @import "elements/_elements.footer";
 @import "elements/_elements.headings";
@@ -163,7 +162,7 @@ $mq-breakpoints: (
 @import "components/_components.logo";
 @import "components/_components.main-nav";
 @import "components/_components.icons";
-@import "components/_components.hero";
+// @import "components/_components.hero";
 @import "components/_components.buttons";
 @import "components/_components.handset";
 @import "components/_components.logos";

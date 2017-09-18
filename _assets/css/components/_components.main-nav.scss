@@ -1,29 +1,51 @@
-.main-nav {
+.nav {
   font-family: 'Open Sans', sans-serif;
-  display:none;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+
+  // Let flex items wrap so nav drops down onto new row
+  flex-wrap: wrap;
+
+  @include mq($from: tablet) {
+    flex-wrap: nowrap;
+  }
+}
+
+.nav-container {
+  //
+  display:block;
+
+  width: 100%;
+  // Make the nav container last. In combinatin with flex wrap
+  // forces nav onto new row
+  order: 3;
+
   @include mq($from: tablet) {
     display: flex;
-    margin-left: $inuit-global-spacing-unit-large;
-    flex-direction: row;
+    order: inherit;
+    width: auto;
   }
+
+
 }
 
 .main-nav__link + .main-nav__link {
+
   border-top: solid 1px $color-gray;
 
   @include mq($from: tablet) {
-    margin-left: $inuit-global-spacing-unit;
     border-top:none;
   }
+
 }
 
 .main-nav__link {
-  @include inuit-font-size(16px, 4);
   display: block;
+  @include inuit-font-size(16px, 4);
   transition: color 0.2s;
+  
   @include mq($from: tablet) {
     display: inline-block;
 

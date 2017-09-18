@@ -2,10 +2,7 @@
   <div class="o-wrapper u-padding-bottom footer__contact">
       {% for link in site.data.footer-contact %}
           <a href="{{ link.href }}" class="{{ link.class }}">
-            <svg class="icon icon--medium">
-              <use xlink:href="#{{ link.icon }}"></use>
-            </svg>
-            &nbsp;{{ link.title }}
+            {{ link.title }}
           </a>
       {% endfor %}
   </div>

@@ -1,6 +1,24 @@
   {% assign pages = site.data.navigation  %}
-  {% for page in pages %}
-    {% if page.title %}
-    <a class="{{ page.class }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-    {% endif %}
-  {% endfor %}
+  <!-- Logo/Brand/Title -->
+  <div class="o-wrapper">
+    <nav class="nav" id="main-menu">
+      <a class="menu" id="menu-toggle">
+        <svg class="icon">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+      </a>
+      <a class="logo" href="/">
+        <span>Hastings Digital</span>
+      </a>
+      <div class="nav-container">
+        {% for page in pages %}
+        {% if page.title %}
+        <a class="{{ page.class }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <a class="c-btn c-btn--primary">
+        Get in touch
+      </a>
+    </nav>
+  </div>

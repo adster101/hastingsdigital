@@ -3,11 +3,12 @@
 //\*------------------------------------*/
 
 $color-brand:       $brand-color;
-$color-blue-dark:   #186DFF;
+$color-blue-dark:   $brand-color;
 $color-blue-light:  #98BEFE;
 $color-gray:        #6a6c73;
 $color-gray-light:  #F8F7F2;
 
+$color-pink:        #FF4081;
 $color-gray-ui:     #4F515A;
 $color-yellow:      #FFCE00;
 $color-red:         #e60204;

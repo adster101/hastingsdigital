@@ -20,25 +20,14 @@
   }
 }
 
-.header__outer-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: $inuit-global-spacing-unit-small;
-  padding-bottom: $inuit-global-spacing-unit-small;
-  @include mq($from: tablet) {
-    flex-direction: row;
-    padding-top: 0;
-    padding-bottom:0;
-  }
-
+.header--homepage {
+  --lightNavy: rgb(43, 61, 70);
+    background: #142831;
+    background-image: radial-gradient(50% 50%,#2196F3 0,#1976D2 100%);
+    background-size: 200%;
+    background-position: -150% -100%;
 }
 
-.header__inner-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  //justify-content: space-between;
-}
 
 .menu, .email {
   width: 24px;
@@ -55,24 +44,7 @@
   }
 }
 
-.header__call-to-action {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-.page-header {
-  background-color: $color-brand;
-  padding-top: $inuit-global-spacing-unit;
-  padding-bottom: $inuit-global-spacing-unit;
-  margin-bottom: $inuit-global-spacing-unit;
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-  }
-
-}
 
 .main-heading {
   @include mq($from: desktop){

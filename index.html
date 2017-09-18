@@ -1,29 +1,35 @@
 ---
 title: Web Design Hastings, East Sussex
-layout: default
+layout: home
 class: home
 excerpt: We offer high quality web design in and around Hastings, East Sussex. We're
   experts in responsive website design with a focus on quality and affordability.
 last_modified_at: '2017-03-28'
 ---
-<div class="dark-blue-bg main-heading-container">
-  <div class="content">
-    <header class="main-heading">
-      <h1 class="u-h5 white">
-        <strong>Web design Hastings, East Sussex.</strong>
-      </h1>
-    	<h1 class="white">
-        Hastings Digital <strong>design</strong> and <strong>build</strong> great looking, fast and affordable websites. Simple!
-      </h1>
-      <p class="center">
-        <a class="c-btn c-btn--ghost white">Get in touch</a>
-        <a class="c-btn c-btn--ghost white">About us</a>
-      </p>
-    </header>
-  </div>
-</div>
 
-<section class="white-bg u-padding-top-large u-padding-bottom-large">
+
+<section class="light-grey-bg"{% if usp.id %} id="{{ usp.id }}"{% endif %}>
+  <div class="o-wrapper">
+    <div class="o-layout o-layout--large">
+      {% for usp in site.data.usps %}
+        <div class=" o-layout__item u-1/3@desktop u-1/3@tablet">
+          <!-- <svg class="icon icon--large">
+            <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
+          </svg> -->
+          <h2 >{{ usp.heading }}</h2>
+          <p>{{ usp.text }} </p>
+          <p class="u-margin-bottom-none">
+        	  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
+        		  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
+        		</a>
+        	</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section><!-- End usps -->
+
+<section class="">
   <div class="o-wrapper">
     <h2>Our work</h2>
     <p>We work with companies large and small local and national. Not only do we design great looking websites but we also offer consultancy services in a range of areas such as Search Engine Optimisation (SEO) and Pay Per Click marketing (PPC).</p>
@@ -36,31 +42,6 @@ last_modified_at: '2017-03-28'
     </ul>
   </div>
 </section>
-
-{% for usp in site.data.usps %}
-  <section class="u-margin-bottom light-grey-bg"{% if usp.id %}id="{{ usp.id }}"{% endif %}>
-    <div class="hero o-wrapper u-padding-top u-padding-bottom {% if loopindex == 1 %}{% else %}hero--reverse{% endif %}">
-      {% assign loopindex = forloop.index | modulo: 2 %}
-      <div class="hero__content u-1/2@tablet">
-        <div class="inner-container">
-          <h2>{{ usp.heading }}</h2>
-          <p>{{ usp.text }} </p>
-          <p class="u-margin-bottom-none">
-      		  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
-      			  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
-      			</a>
-      		</p>
-        </div>
-      </div>
-      <div class="hero__image center u-1/2@tablet">
-        <svg class="icon">
-          <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
-        </svg>
-      </div>
-    </div>
-  </section>
-{% endfor %}
-
 {% include cta/get-a-quote.html %}
 
 {% include testimonials.html %}

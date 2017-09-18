@@ -39,7 +39,7 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: $color-orange;
+  background-color: $color-pink;
 
 
   &,
@@ -52,7 +52,7 @@
 
   &:hover,
   &:focus {
-    background-color: darken($color-brand, 10%);
+    background-color: darken($color-pink, 10%);
   }
 
 }
