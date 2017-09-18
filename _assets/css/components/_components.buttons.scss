@@ -26,9 +26,10 @@
   padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
   transition: $global-transition;
   border-radius: $global-radius;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   @include inuit-font-size(16px);
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 

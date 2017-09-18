@@ -8,7 +8,7 @@ last_modified_at: '2017-03-28'
 ---
 
 
-<section class="light-grey-bg"{% if usp.id %} id="{{ usp.id }}"{% endif %}>
+<section class="light-grey-bg u-padding-top u-padding-bottom "{% if usp.id %} id="{{ usp.id }}"{% endif %}>
   <div class="o-wrapper">
     <div class="o-layout o-layout--large">
       {% for usp in site.data.usps %}
@@ -16,7 +16,7 @@ last_modified_at: '2017-03-28'
           <!-- <svg class="icon icon--large">
             <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
           </svg> -->
-          <h2 >{{ usp.heading }}</h2>
+          <h3>{{ usp.heading }}</h2>
           <p>{{ usp.text }} </p>
           <p class="u-margin-bottom-none">
         	  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">

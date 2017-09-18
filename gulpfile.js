@@ -114,7 +114,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch(['_config.yml'], ['build:jekyll:watch']);
 
   // Watch .scss files; changes are piped to browserSync.
-  gulp.watch('_assets/css/**/*.scss', ['build:styles']);
+  gulp.watch('_assets/css/**/*.scss', ['build:styles', 'build:jekyll:watch']);
 
   // Watch html and markdown files.
   gulp.watch(['**/*.html', '!_site/**/*.*'], ['build:jekyll:watch']);

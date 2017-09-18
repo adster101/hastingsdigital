@@ -1,7 +1,7 @@
   {% assign pages = site.data.navigation  %}
   <!-- Logo/Brand/Title -->
   <div class="o-wrapper">
-    <nav class="nav" id="main-menu">
+    <nav class="nav">
       <a class="menu" id="menu-toggle">
         <svg class="icon">
           <use xlink:href="#icon-menu"></use>
@@ -10,7 +10,7 @@
       <a class="logo" href="/">
         <span>Hastings Digital</span>
       </a>
-      <div class="nav-container">
+      <div class="nav-container" id="main-menu">
         {% for page in pages %}
         {% if page.title %}
         <a class="{{ page.class }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
