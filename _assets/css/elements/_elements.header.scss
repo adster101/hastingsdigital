@@ -40,24 +40,3 @@
 
 
 }
-
-
-
-.main-heading-container {
-
-  .content {
-    min-width: 300px;
-    margin: 0 auto;
-
-    @include mq($from: phablet) {
-      width: 440px;
-    }
-    @include mq($from: tablet) {
-      width: 720px;
-    }
-    @include mq($from: desktop) {
-      width: 960px;
-    }
-
-  }
-}

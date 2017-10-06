@@ -1,3 +1,20 @@
 .u-orange-bg {
   background-color: #ff6a00;
 }
+
+// Backgrounds and what not
+.u-light-blue-bg {
+  background: $color-blue-light;
+}
+
+.u-dark-blue-bg {
+  background-color: $color-blue-dark;
+}
+
+.u-light-grey-bg {
+  background-color: $color-gray-light;
+}
+
+.u-white-bg {
+  background-color: $color-white;
+}

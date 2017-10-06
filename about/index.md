@@ -1,5 +1,5 @@
 ---
-title: About Hastings Digital
+title: About us
 layout: page
 class: main-nav__link about
 order: 3
@@ -7,20 +7,12 @@ page-class: about
 author: Adam Rifat
 ---
 
-Hastings Digital is a website design and development agency providing a broad range of digital services to small and medium sized businesses and individuals in Hastings and the surrounding areas.
+Hastings Digital is a small web design agency located in the small coastal town of Hastings (obviously!). We offer a friendly and professional service to anyone seeking to build or develop their business or profile online.
 
-We're a small team which means we can work one to one with you ensuring that we deliver exactly what you need. We like to keep things as simple as possible which means a focus on what matters to you. Our work is precise, clean, clear and fast which is a key consideration in todays multi device world.  
+Owned and run by Adam Rifat Hastings Digital is the culmination of over nine years experience working with IT and the web. It was while working on a large IT project for the AA Driving School in 2008 Adam was asked by colleagues if he could help them build a website for their small business. The resulting <a href="/portfolio/equilibre-holistic-therapy/">Equilibre Holistic Therapy</a> website is still maintained by Hastings Digital today with the Patricia (the owner of Equilibre) being our oldest and first client.
 
-Whether you already have an established website which needs enhancing or whether you're looking to build a new website from scratch then we can help.
+Over the intervening years we've worked with a wide range of companies both large and small both local and national. During that time we've come to understand that trying to fit a square peg into a round hole simply doesn't work which is why we craft each one of our sites from the ground up to ensure your
 
-### Value for money
+We’re a small focused team which means we can work one to one with you ensuring that we deliver exactly what you need. We like to keep things as simple as possible which means a focus on what matters to you.
 
-Our websites typically start from around £525 which includes everything you need to get up and running.
-
-Typically includes the website itself, a Content Management System (CMS) so that you can update the site yourself, a personalised email address and hosting on a reliable and secure web server.
-
-We provide a range of additional services such as [Search Engine Optimisation](http://hastings.digital/serices)  which we offer either on a daily or hourly rate.
-
-### Bespoke
-
-We don't use a 'cookie cutter' approach to our sites where your site looks the same as the last one we produced. All our site are designed and built from the ground up using the most up to date techniques. If you already have an existing brand identity we will use that as a basis for a new design so that your brand reputation is carried forward.
+Whatever your requirements we're sure we can help so why not drop us a line and we can have a chat.

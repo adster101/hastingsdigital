@@ -1,9 +1,8 @@
 .nav {
-  justify-content: space-between;
   align-items: center;
   display: flex;
-  flex-direction: row;
   padding-top:$inuit-global-spacing-unit-small;
+
   // Let flex items wrap so nav drops down onto new row
   flex-wrap: wrap;
   font-weight: 400;
@@ -14,10 +13,11 @@
 }
 
 .nav-container {
-  //
-  display:block;
 
+  //
+  display:none;
   width: 100%;
+
   // Make the nav container last. In combinatin with flex wrap
   // forces nav onto new row
   order: 3;
@@ -28,8 +28,6 @@
     width: auto;
     margin-right: $inuit-global-spacing-unit-large;
   }
-
-
 }
 
 .menu, .email {
@@ -40,7 +38,7 @@
     display:block;
     width: 100%;
     height: 100%;
-    fill:color-gray-ui;
+    fill: $color-gray-ui;
   }
   @include mq($from: tablet) {
     display:none;
