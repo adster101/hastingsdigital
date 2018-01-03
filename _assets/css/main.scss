@@ -178,7 +178,9 @@ $mq-breakpoints: (
 @import "../../bower_components/inuitcss/utilities/utilities.spacings";
 $inuit-responsive-spacing-directions: (
   "-left": "-left",
-  "-right": "-right"
+  "-right": "-right",
+  "-top": "-top",
+  "-bottom": "-bottom"
 );
 
 $inuit-responsive-spacing-properties: (
@@ -187,7 +189,7 @@ $inuit-responsive-spacing-properties: (
 );
 
 $inuit-responsive-spacing-sizes: (
-  "-tiny": $inuit-global-spacing-unit-tiny,
+  "-large": $inuit-global-spacing-unit-large,
   "-huge": $inuit-global-spacing-unit-huge
 );
 

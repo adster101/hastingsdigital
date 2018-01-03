@@ -3,8 +3,11 @@ var hd = hd || {};
 
 // same functions as above
 hd.nav = (function() {
+
   function mobileMenu() {
     document.getElementById('menu-toggle').addEventListener('click', function(e) {
+
+      console.log("clicked");
 
       // Get the main menu element...
       var menu = document.getElementById('main-menu');
@@ -13,7 +16,9 @@ hd.nav = (function() {
       if(menu.style.display == 'none' || menu.style.display == '')
       {
         menu.style.display = 'block';
-      } else {
+      }
+      else
+      {
         menu.style.display = 'none';
       }
     })
