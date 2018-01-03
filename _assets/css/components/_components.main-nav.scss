@@ -30,7 +30,7 @@
   }
 }
 
-.menu, .email {
+.menu {
   width: 24px;
   height: 24px;
 
@@ -43,7 +43,9 @@
   @include mq($from: tablet) {
     display:none;
   }
+
 }
+
 
 .masthead--blue {
   .menu {
@@ -95,7 +97,7 @@
 
   &:hover, &:active {
     text-decoration: none;
-    color: $color-orange;
+    color: $color-pink;
   }
 }
 
@@ -111,5 +113,5 @@
 
 
 .blog nav .blog, .about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
-  color: $color-orange;
+  color: $color-pink;
 }

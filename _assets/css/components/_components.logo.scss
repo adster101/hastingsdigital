@@ -1,10 +1,9 @@
 .logo {
-  font-family: 'Open Sans', sans-serif;
   color: $color-black;
   @include inuit-font-size(18px);
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-weight: 400;
   flex-grow: 1;
 
   @include mq($until: tablet) {

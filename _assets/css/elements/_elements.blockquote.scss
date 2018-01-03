@@ -11,11 +11,6 @@
       padding: $inuit-global-spacing-unit;
     }
 
-    @include mq(wide) {
-      max-width: 60%;
-      padding: $inuit-global-spacing-unit-large;
-      @include inuit-font-size(21px,2rem);
-    }
 
 
     > footer {

@@ -3,11 +3,11 @@ layout: default
 ---
 <header class="masthead">
 {% include nav.html %}
+{% include page-header.html %}
 </header>
-<main class="u-light-grey-bg" aria-label="Content" role="main">
-  {% include page-header.html %}
-<article class="o-wrapper" itemtype="http://schema.org/BlogPosting">
-  <div  itemprop="articleBody" class="u-margin-left-huge@desktop u-margin-right-huge@desktop u-padding-left-huge@desktop u-padding-right-huge@desktop">
+<main class="u-light-grey-bg u-padding-top-huge@desktop u-padding-bottom-huge@desktop" aria-label="Content" role="main">
+<article class="o-wrapper u-margin-left-huge@desktop u-margin-right-huge@desktop u-padding-left-huge@desktop u-padding-right-huge@desktop" itemtype="http://schema.org/BlogPosting">
+  <div  itemprop="articleBody" class="">
     {% if page.date %}
     <p class="u-margin-top-small u-margin-bottom-none" />
     <span class="small white">
