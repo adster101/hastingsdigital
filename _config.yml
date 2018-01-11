@@ -38,6 +38,10 @@ collections:
   posts:
     permalink: /:categories/:title
     output: true
+  authors:
+    title: Authors
+    output: true
+    permalink: "/authors/:path"
 defaults:
   -
     values:

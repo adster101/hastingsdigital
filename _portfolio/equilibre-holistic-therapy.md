@@ -12,6 +12,7 @@ last_modified_at: '2017-03-08'
 author: Adam Rifat
 tagline: 'We update the Equilibre website with a clean responsive design and updated
   CMS '
+id: adam
 ---
 
 The previous Equilibre site was in need of a makeover. The old site design had worked well but the template wasn't responsive so anyone viewing the site on a smartphone or tablet were getting a sub-par user experience. The backend CMS used to manage the site content was also badly out of date and also needed upgrading.

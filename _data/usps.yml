@@ -3,7 +3,7 @@
   alt:
   heading: Web Design
   text: Our comprehensive <a href="/website-design">website design service</a> caters for businesses of all shapes and sizes. Our sites not only look great, are fast but they're also affordable.
-  url: /website-design
+  url: /services/
   url-label: Learn more
   url-title: Learn more about Hastings Digital's web design service
 - image:
@@ -12,10 +12,11 @@
   heading: App development
   text: Our <a>app development service</a> can get your idea off the ground. Using the latest web technologies apps don't need to cost the earth. Start the next Facebook today!
   url-title: Read more about our app development services
-  url: /web-app-development
+  url: /services/
   url-label: Learn more
 - image:
   heading: Consultancy services
-  link: /consultancy-services
-  text: We offer a range of <a<consultancy services</a> including search engine optimisation and custom development work. We're also well place to undertake agency 'overflow' work.
+  link: /services/
+  text: We offer a range of consultancy services including search engine optimisation and custom development work. We're also well place to undertake agency 'overflow' work.
   anchortext: Got a project in mind?
+  url-label: Learn more

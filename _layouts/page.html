@@ -27,6 +27,9 @@ layout: default
     </span>
     </p>
     {% endif %}
+    {% assign author = site.authors | where: 'id', page.author-id | first %}
+{{ author.title }}
+
         {{ content }}
   </div>
 </article>

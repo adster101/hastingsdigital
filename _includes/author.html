@@ -1,0 +1,26 @@
+{% assign author = site.authors | where: "id", post.id %}
+{{ post.id }}
+{% for auth in author  %}
+  {{ author.id }}
+{% endfor %}
+
+
+{% if author %}
+<div class="media">
+  <div class="media__img">
+    <img src="{{ author.image }}"/>
+  </div>
+  <div class="media__body">
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        <em>{{ author.title | prepend: 'By '}}</em>
+      </span>
+    </span>
+    &nbsp;&ndash;&nbsp;
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <em>{{ page.date | date: "%b %-d, %Y" }}</em>
+    </time>
+    <br /><em>{{ author.excerpt | strip_html }}</em>
+  </div>
+</div>
+{% endif %}

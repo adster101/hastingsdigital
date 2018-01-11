@@ -122,6 +122,9 @@ gulp.task('serve', ['build'], function() {
   // Watch html and markdown files.
   gulp.watch(['**/*.html', '!_site/**/*.*'], ['build:jekyll:watch']);
 
+  // Watch html and markdown files.
+  gulp.watch(['**/*.md', '!_site/**/*.*'], ['build:jekyll:watch']);
+
 
 
 });
