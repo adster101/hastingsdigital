@@ -29,12 +29,7 @@
   font-family: "Roboto", sans-serif;
   @include inuit-font-size(16px);
   font-weight: 400;
-  letter-spacing: 1px;
 }
-
-
-
-
 
 /* Style variants
    ========================================================================== */
@@ -172,4 +167,8 @@ $btn-ghost-border-width: 2px;
 
   }
 
+}
+
+.c-btn--icon {
+  
 }

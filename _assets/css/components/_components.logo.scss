@@ -4,10 +4,13 @@
   display: flex;
   align-items: center;
   font-weight: 400;
-  flex-grow: 1;
+  //flex-grow: 1;
 
-  @include mq($until: tablet) {
-    margin-left: $inuit-global-spacing-unit-small;
+  @include mq($from: tablet) {
+    margin-right: $inuit-global-spacing-unit-large;
+  }
+  &:hover {
+    text-decoration: none;
   }
 }
 

@@ -1,37 +1,37 @@
 ---
 layout: default
 ---
-<header class="masthead">
-{% include nav.html %}
-{% include page-header.html %}
-</header>
-<main class="u-light-grey-bg u-padding-top-huge@desktop u-padding-bottom-huge@desktop" aria-label="Content" role="main">
-<article class="o-wrapper u-margin-left-huge@desktop u-margin-right-huge@desktop u-padding-left-huge@desktop u-padding-right-huge@desktop" itemtype="http://schema.org/BlogPosting">
-  <div  itemprop="articleBody" class="">
-    {% if page.date %}
-    <p class="u-margin-top-small u-margin-bottom-none" />
-    <span class="small white">
-      <time itemprop="datePublished">
-        {{ page.date | date: "%d %b %Y" }}
-      </time>
-      {% if page.author %}
-        &nbsp;|&nbsp;
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">
-            <strong>
-              {{ page.author }}
-            </strong>
-          </span>
-        </span>
-      {% endif %}
-    </span>
-    </p>
-    {% endif %}
-    {% assign author = site.authors | where: 'id', page.author-id | first %}
-{{ author.title }}
 
+{% include page-header.html %}
+
+<main class="u-padding-top-huge@desktop u-padding-bottom-huge@desktop" aria-label="Content" role="main">
+  <article class="o-wrapper " itemtype="http://schema.org/BlogPosting">
+    <div  itemprop="articleBody" class="u-2/3@desktop">
+      {% if page.date %}
+      <p class="u-margin-top-small u-margin-bottom-none" />
+      <span class="small white">
+        <time itemprop="datePublished">
+          {{ page.date | date: "%d %b %Y" }}
+        </time>
+        {% if page.author %}
+          &nbsp;|&nbsp;
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">
+              <strong>
+                {{ page.author }}
+              </strong>
+            </span>
+          </span>
+        {% endif %}
+      </span>
+      </p>
+      {% endif %}
+      {% assign author = site.authors | where: 'id', page.author-id | first %}
+        {{ author.title }}
         {{ content }}
-  </div>
-</article>
+    </div>
+  </article>
 </main>
+
 {% include testimonials.html %}
+{% include cta/get-a-quote.html %}

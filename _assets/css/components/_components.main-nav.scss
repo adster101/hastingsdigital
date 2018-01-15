@@ -2,13 +2,16 @@
   align-items: center;
   display: flex;
   padding-top:$inuit-global-spacing-unit-small;
-
+  padding-bottom:$inuit-global-spacing-unit-small;
+  justify-content: space-between;
   // Let flex items wrap so nav drops down onto new row
   flex-wrap: wrap;
   font-weight: 400;
+
   @include mq($from: tablet) {
     flex-wrap: nowrap;
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -17,6 +20,7 @@
   //
   display:none;
   width: 100%;
+  flex-grow: 1;
 
   // Make the nav container last. In combinatin with flex wrap
   // forces nav onto new row
@@ -43,7 +47,6 @@
   @include mq($from: tablet) {
     display:none;
   }
-
 }
 
 
@@ -55,7 +58,13 @@
   }
 }
 
+.main-nav__link.main-nav__contact {
+  display: flex;
+  align-items: center;
+  color: $color-gray;
+  @include inuit-font-size(16px, 4);
 
+}
 
 
 .main-nav__link + .main-nav__link {
@@ -69,18 +78,6 @@
 
 }
 
-.masthead--blue {
-  .main-nav__link + .main-nav__link {
-    border-top: solid 1px $color-white;
-
-    @include mq($from: tablet) {
-      border-top:none;
-      margin-left: $inuit-global-spacing-unit-large;
-    }
-  }
-
-}
-
 .main-nav__link {
   display: block;
   @include inuit-font-size(16px, 4);
@@ -88,7 +85,6 @@
 
   @include mq($from: tablet) {
     display: inline-block;
-
   }
 
   text-decoration:none;
@@ -100,17 +96,6 @@
     color: $color-pink;
   }
 }
-
-.masthead--blue {
-  .main-nav__link {
-    color: $color-white;
-
-    &:hover, &:active {
-      text-decoration: underline;
-    }
-  }
-}
-
 
 .blog nav .blog, .about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
   color: $color-pink;

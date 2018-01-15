@@ -1,7 +1,7 @@
 - image: /images/context-graph.b8e67f13a57d.svg
   icon: icon-embed2
   alt:
-  heading: Web Design
+  heading: Design
   text: Our comprehensive <a href="/website-design">website design service</a> caters for businesses of all shapes and sizes. Our sites not only look great, are fast but they're also affordable.
   url: /services/
   url-label: Learn more
@@ -9,13 +9,13 @@
 - image:
   icon: icon-stats-dots
   alt:
-  heading: App development
+  heading: Development
   text: Our <a>app development service</a> can get your idea off the ground. Using the latest web technologies apps don't need to cost the earth. Start the next Facebook today!
   url-title: Read more about our app development services
   url: /services/
   url-label: Learn more
 - image:
-  heading: Consultancy services
+  heading: Consultancy
   link: /services/
   text: We offer a range of consultancy services including search engine optimisation and custom development work. We're also well place to undertake agency 'overflow' work.
   anchortext: Got a project in mind?
