@@ -1,29 +1,30 @@
 .hero {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding-top: $inuit-global-spacing-unit;
   padding-bottom: $inuit-global-spacing-unit;
 
   @include mq($from: tablet) {
+    padding-bottom: $inuit-global-spacing-unit-large;
+    padding-top: $inuit-global-spacing-unit-large;
     flex-direction: row;
   }
 }
+
 .hero--reverse {
   @include mq($from: tablet) {
     flex-direction: row-reverse;
   }
 }
+
 .hero__image {
   flex-grow: 0;
+  width: 54%;
 }
 
-
 .hero__content {
-
   flex-grow: 0;
-
-
-
+  width: 56%;
 }
 
 .hero__content-link {

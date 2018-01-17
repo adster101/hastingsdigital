@@ -88,15 +88,16 @@
   }
 
   text-decoration:none;
-  color: $color-gray;
+  color: $color-black;
+  color:rgba(0,0,0,0.54);
   margin-bottom: inherit;
 
   &:hover, &:active {
     text-decoration: none;
-    color: $color-pink;
+    color:rgba(0,0,0,0.87)
   }
 }
 
 .blog nav .blog, .about nav .about, .services nav .services, .portfolio nav .portfolio, .contact nav .contact {
-  color: $color-pink;
+  color:rgba(0,0,0,0.87)
 }
