@@ -22,7 +22,7 @@ var paths = require('./_assets/gulp_config/paths');
 
 // Use Sass compiler to process styles, adds vendor prefixes, minifies etc and outputs for the appropriate locations
 gulp.task('build:styles:main', function(){
-  return sass (paths.sassFiles + '/main.scss', {
+  return sass (paths.sassFiles + '/style.scss', {
     style: 'compressed',
     trace: true,
     loadPath: [paths.sassFiles]
@@ -38,7 +38,7 @@ gulp.task('build:styles:main', function(){
 });
 
 gulp.task('build:styles:critical', function(){
-  return sass (paths.sassFiles + '/main.scss', {
+  return sass (paths.sassFiles + '/style.scss', {
     style: 'compressed',
     trace: true,
     loadPath: [paths.sassFiles]

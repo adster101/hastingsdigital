@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "dependencies": {
     "grunt-contrib-compress": "~1.4.1",
-    "gulp": "~3.9.1"
+    "gulp": "~3.9.1",
+    "tachyons-sass": "^4.9.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

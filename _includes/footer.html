@@ -1,10 +1,25 @@
 <footer class="footer">
-  <div class="o-wrapper u-padding-bottom footer__contact">
-      {% for link in site.data.footer-contact %}
-          <a href="{{ link.href }}" class="{{ link.class }}">
-            {{ link.title }}
-          </a>
+  <div class="mw8 center flex">
+    {% for section in site.data.footer-contact.sections %}
+      <div class="w-50-m w-25-ns">
+      <h4>{{ section.title }}</h4>
+      {% if section.content %}
+        <p>{{ section.content }}</p>
+      {% endif %}
+      {% if section.links %}
+      {% for link in section.links %}
+        <a href="{{ link.url }}" class="db mb2 flex items-center">
+          {% if link.image %}
+            <span class="w1 h1 dib mr1">
+            {{ link.image }}
+          </span>
+          {% endif %}
+          {{ link.title }}
+        </a>
       {% endfor %}
+      {% endif %}
+    </div>
+    {% endfor %}
   </div>
   <p class="small">
     {{ site.address }}

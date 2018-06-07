@@ -1,13 +1,14 @@
 - image: /images/context-graph.b8e67f13a57d.svg
-  icon: icon-embed2
   alt:
   heading: Design
   text: Our comprehensive <a href="/website-design">website design service</a> caters for businesses of all shapes and sizes. Our sites not only look great, are fast but they're also affordable.
   url: /services/
   url-label: Learn more
   url-title: Learn more about Hastings Digital's web design service
+  bg-class: bg-dark-gray
+  text-class: moon-gray
+  id:
 - image:
-  icon: icon-stats-dots
   alt:
   heading: Development
   text: Our <a>app development service</a> can get your idea off the ground. Using the latest web technologies apps don't need to cost the earth. Start the next Facebook today!
