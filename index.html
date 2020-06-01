@@ -6,37 +6,51 @@ excerpt: We offer high quality web design in and around Hastings, East Sussex. W
   experts in responsive website design with a focus on quality and affordability.
 last_modified_at: '2017-03-28'
 ---
-<header class="pv5" role="banner">
-  <div class="flex ph5">
-    <div class="w-40">
-    <h1 class="b f2 lh-title near-black mv0">
-      We build websites<br> and apps. In Hastings.
-    </h1>
-    <a href="/services" class="f5 link dim br2 ph4 pv3 mv4 dib b lh-solid white bg-light-green">Learn more</a>
-    <h4 class="white">
-      Web design Hastings, East Sussex.
-    </h4>
-  </div>
-  <div class="w-60">
-    <img src="/images/trade-paints-device-montage.png" />
+<section class="u-dark-blue-bg">
+
+<div class="o-wrapper">
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="white">
+        At Hastings Digital we <strong>design</strong> and <strong>build</strong> great looking, fast and affordable websites. Simple!
+      </h1>
+      <h4 class="white">
+        Web design Hastings, East Sussex.
+      </h4>
+
+        <a href="/about" class="c-btn c-btn--primary">Our services</a>
+      
+    </div>
+    <div class="hero__image">
+      <svg class="icon">
+        <use xlink:href="#icon-embed2"></use>
+      </svg>
+    </div>
   </div>
 </div>
-</header>
-<main role="main">
-  {% for usp in site.data.usps %}
-    <section class="{{ usp.bg-class }} {{ usp.text-class }}"{% if usp.id %} id="{{ usp.id }}"{% endif %}>
-      <div class="pv5 mw8 center">
-        <h2>{{ usp.heading }}</h2>
-        <p class="measure">{{ usp.text }} </p>
-        <p>
-      	  <a title="{{ usp.title }}" class="" href="{{ usp.url }}">
-      		  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
-      		</a>
-      	</p>
-      </div>
-    </section><!-- End usps -->
-  {% endfor %}
-</main>
+</section>
+<section class="u-light-grey-bg u-padding-top-large@desktop u-padding-bottom-large@desktop u-padding-top u-padding-bottom "{% if usp.id %} id="{{ usp.id }}"{% endif %}>
+  <div class="o-wrapper">
+    <div class="o-layout o-layout--large">
+      {% for usp in site.data.usps %}
+        <div class=" o-layout__item u-1/3@desktop u-1/3@tablet">
+          <!-- <svg class="icon icon--large">
+            <use xlink:href="{{ usp.icon | prepend: '#' }}"></use>
+          </svg> -->
+          <h3>{{ usp.heading }}</h2>
+          <p>{{ usp.text }} </p>
+          <p class="u-margin-bottom-none">
+        	  <a title="{{ usp.title }}" class="c-btn c-btn--secondary c-btn--small" href="{{ usp.url }}">
+        		  {{ usp.url-label }} &nbsp; <strong>&rarr;</strong>
+        		</a>
+        	</p>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section><!-- End usps -->
+
 <!--<section class="">
   <div class="o-wrapper">
     <h2>Our work</h2>
@@ -52,5 +66,4 @@ last_modified_at: '2017-03-28'
 </section>-->
 
 {% include testimonials.html %}
-
 {% include cta/get-a-quote.html %}

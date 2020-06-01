@@ -1,24 +1,29 @@
   {% assign pages = site.data.navigation  %}
   <!-- Logo/Brand/Title -->
-    <nav class="flex items-center h3 bb b--light-gray" role="navigation">
-      <a class="logo link b black inline-flex items-center h3 bg-animate ph3 hover-bg-near-white" href="/">
+  <div class="o-wrapper">
+    <nav class="nav">
+      <a class="menu" id="menu-toggle">
+        <svg class="icon">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+      </a>
+      <a class="logo" href="/">
         <span>Hastings Digital</span>
       </a>
-      <div class="flex flex-auto items-center lh-solid">
+      <div class="nav-container" id="main-menu">
         {% for page in pages %}
-          {% if page.title %}
-            <a class="{{ page.class }} debug bg-animate inline-flex items-center h3 f6 b link dark-gray ph3 hover-bg-near-white" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-          {% endif %}
+        {% if page.title %}
+        <a class="{{ page.class }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
+        {% endif %}
         {% endfor %}
       </div>
-      <div class="flex items-center h3 items-end">
-        <a class="f7 mr3 link dim br3 ph3 pv3 dib b lh-solid white bg-hot-pink" href="#">
+      <a href="/contact" class="main-nav__link main-nav__contact">
+        <svg class="icon icon--medium u-margin-right-tiny@tablet">
+          <use xlink:href="#icon-mail_outline"></use>
+        </svg>
+        <span class="u-hidden-mobile">
           Get in touch
-        </a>
-        <a class="dn-ns" id="menu-toggle">
-          <svg class="icon">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-        </a>
-      </div>
+        </span>
+      </a>
     </nav>
+  </div>

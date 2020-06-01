@@ -4,18 +4,11 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
-  
-  <body class="sans-serif {{ page.page-class }}">
-
+  <body class="no-js u-light-grey-bg {{ page.page-class }}">
     {% include symbols/symbol-defs.svg %}
-
-    {% include nav.html %}
-
-    {{ content }}
-
+    {% include header.html %}
+      {{ content }}
     {% include footer.html %}
-
   </body>
 </html>
